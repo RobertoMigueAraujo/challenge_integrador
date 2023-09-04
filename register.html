@@ -14,17 +14,35 @@
         <a href="./index.html"></a>
          <img src=./img/branding/logo_light_horizontal.svg   alt="Isologotipo de la marca Funkoshop">
         </picture>
-        <ul>
+        <u>
            <li><a href="./pages/shop.html">SHOP</a></li>
            <li><a href="./pages/contact.html">CONTACTO</a></li>
            <li><a href="./pages/login.html">LOGIN</a></li>
            <li><a href="./pages/cart.html"></a>
                <img src="./img/icons/cart-icon.svg" alt="Icono de carrito"></li>
-        </ul>
-        
+           </u>
     </nav>
-
    </header> <!-- fin del header  -->
+   <h1>CREA TU CUENTA</h1><br>
+   <P>Completa el formulario para ser parte del mundo de los Funkos</P>
+   <form action="post" enctype="application/x-www-form-urlencoded">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" placeholder="John"><br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido" placeholder="Doe"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" name="contraseña" id="contraseña" placeholder="********"><br><br>
+    <label for="RepitaContraseña">Repita Contraseña:</label>
+    <input type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********"><br><br>
+    <button type="submit">Registrar</button> 
+    <input type="checkbox" name="AceptarTerminos"  id="AceptarTerminos" required>
+    <label for="AceptarTerminos">Aceptar <a href="#"> Terminos y Condiciones</a></label>
+
+ </form>
+ 
+
    <footer>
     <section>
         <nav>
