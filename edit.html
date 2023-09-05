@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="./Css/index.css"> 
+</head>
+<body>
+    <header> <!-- Inicio del header -->
+        <nav>
+            <picture>
+            <a href="./index.html"></a>
+             <img src=./img/branding/logo_light_horizontal.svg   alt="Isologotipo de la marca Funkoshop">
+            </picture>
+            <ul>
+               <li><a href="./pages/shop.html">SHOP</a></li>
+               <li><a href="./pages/contact.html">CONTACTO</a></li>
+               <li><a href="./pages/login.html">LOGIN</a></li>
+               <li><a href="./pages/cart.html"></a>
+                   <img src="./img/icons/cart-icon.svg" alt="Icono de carrito"></li>
+            </ul>
+            
+        </nav>
+       </header>
+    <main>
+        <h1>EDITAR ITEM</h1>
+        <label for="categoria">Selecciona una categoría:</label>
+    <select id="categoria">
+        <option value="Figuras">Figuras</option>
+        <option value="Edicion Limitada">Edicion Limitada</option>
+        <option value="Accesorios">Aceesorios</option>
+    </select>
+
+    <br><br>
+
+    <label for="licencia">Selecciona una licencia:</label>
+    <select id="licencia">
+        <option value="Naruto Shippuden">Naruto Shippuden</option>
+        <option value="Star Wars">Star Wars</option>
+        <option value="Harry Potter">Harry Potter/option>
+    </select>
+    <h2>Agregar Nombre de Figura</h2>
+    <form id="figura-form">
+        <label for="nombre">Nombre de la Figura:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <label for="descripcion">Descripción de la Figura:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" name="sku" required>
+        <br><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+        <br><br>
+
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" required>
+        <br><br>
+
+        <label for="descuento">Descuento:</label>
+        <input type="number" id="descuento" name="descuento">
+        <br><br>
+
+        <label for="cuotas">Cuotas:</label>
+        <select id="cuotas" name="cuotas">
+            <option value="3 cuotas">3 cuotas</option>
+            <option value="6 cuotas">6 cuotas</option>
+            <option value="9 cuotas">9 cuotas</option>
+        </select>
+        <br><br>
+
+        <label for="imagenes">Imágenes:</label>
+        <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
+        <img src="/img/pokemon/charmander-1.webp" alt="Imagen 1 del producto">
+        <img src="/img/pokemon/charmander-box.webp" alt="Imagen 1 del producto">
+
+        <br><br>
+        <input type="submit" value="Modificar Producto">
+    </form>
+
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">REGISTRARSE</a></li>
+                    <li><a href="">LOGIN</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+    
+            </nav>
+            <picture>
+                <img src="./img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+    
+            </picture>
+    
+        </section>
+        <p>ALL rights reserved 2023 - Funkoshop &copy;</p>
+       </footer>    
+</body>
+</html>
