@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    
+</head>
+<body>
+   <header> <!-- Inicio del header -->
+    <nav>
+        <picture>
+        <a href="./index.html"></a>
+         <img src=./img/branding/logo_light_horizontal.svg   alt="Isologotipo de la marca Funkoshop">
+        </picture>
+        <ul>
+           <li><a href="./pages/shop.html">SHOP</a></li>
+           <li><a href="./pages/contact.html">CONTACTO</a></li>
+           <li><a href="./pages/login.html">LOGIN</a></li>
+           <li><a href="./pages/cart.html"></a>
+               <img src="./img/icons/cart-icon.svg" alt="Icono de carrito"></li>
+        </ul>
+        
+    </nav>
+
+   </header> <!-- fin del header  -->
+   <h1>CREAR NUEVO ITEM</h1><br>
+   <form action="post" enctype="application/x-www-form-urlencoded">
+    <label for="categoria">Categoria:</label>
+    <select name="seleccionar" id="categoria" >
+        <option value="" disabled selected>Seleccionar</option>
+     
+    </select>
+    <label for="licencia">Licencia:</label>
+    <select name="seleccionar" id="licencia">
+        <option value="" disabled selected>Seleccionar</option>
+    </select><br>
+    <label for="NombreDelProducto">Nombre del producto:</label>
+    <input type="NombreDelProducto" name="NombreDelProducto" id="NombreDelProducto" placeholder="Kakashi Hataki Shipudden Saga"><br>
+    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="30" rows="10"  placeholder="Descripcion del producto"></textarea><br>
+    <label for="sku">SKU:</label>
+    <input type="text" name="sku" id="sku" placeholder="SSK111AB001">
+    <label for="precio">PRECIO:</label>
+    <input type="text" name="precio" id="precio" placeholder="$ 0.000,00">
+    <label for="stock">STOCK:</label>
+    <input type="text" name="stock" id="stock" placeholder="0"><br>
+    <label for="descuento">Descuento:</label>
+    <input type="text" name="descuento" id="descuento" placeholder="0%">
+    <label for="CUOTAS">Cuotas:</label>
+    <select name="cuotas" id="cuotas">
+        <option value="3">3 cuotas sin interés</option>
+    </select>
+    </option><br>
+    <label for="Imagenes">Imagenes:</label>
+<input type="file" id="Imagenes" name="Imagenes" style="display: none;">
+<button onclick="document.getElementById('Imagenes').click();">Elegir Archivos</button>
+<p>No se ha seleccionado ningún archivo</p>
+<button type="submit">Agregar producto</button>
+    <button type="reset">Limpiar</button>
+</form>
+
+
+
+ 
+
+
+   <footer>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">REGISTRARSE</a></li>
+                <li><a href="">LOGIN</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+        <picture>
+            <img src="./img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+
+        </picture>
+
+    </section>
+    <p>ALL rights reserved 2023 - Funkoshop &copy;</p>
+   </footer>
+</body>
+</html>

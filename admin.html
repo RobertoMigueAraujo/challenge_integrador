@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./Css/index.css">      
+</head>
+<body>
+    <header> <!-- Inicio del header -->
+        <nav>
+            <picture>
+            <a href="./index.html"></a>
+             <img src=./img/branding/logo_light_horizontal.svg   alt="Isologotipo de la marca Funkoshop">
+            </picture>
+            <ul>
+               <li><a href="./pages/shop.html">SHOP</a></li>
+               <li><a href="./pages/contact.html">CONTACTO</a></li>
+               <li><a href="./pages/login.html">LOGIN</a></li>
+               <li><a href="./pages/cart.html"></a>
+                   <img src="./img/icons/cart-icon.svg" alt="Icono de carrito"></li>
+            </ul>
+            
+        </nav>
+    
+    </header> <!-- fin del header  -->
+    <main>
+        <form id="search-form">
+            <img src="/img/icons/search_icon.svg" alt="Ícono de lupa" />
+            <input type="text" id="search-input" placeholder="Código, nombre o categoría" />  
+        </form>
+
+        <h1>TABLA DE PRODUCTOS</h1>
+        <h2>AGREGAR</h2>
+        <a href="enlace-para-agregar"><button><img src="/img/icons/edit_pencil.svg" alt="Agregar Producto"></button></a>
+        <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Código</th>
+                <th>Nombre del Producto</th>
+                <th>Categoría</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>STW001001</td>
+                <td>Baby Yoda Blueball</td>
+                <td>STAR WARS</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>STW001002</td>
+                <td>Boba Fett Fighter</td>
+                <td>STAR WARS</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">REGISTRARSE</a></li>
+                    <li><a href="">LOGIN</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+    
+            </nav>
+            <picture>
+                <img src="./img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+    
+            </picture>
+    
+        </section>
+        <p>ALL rights reserved 2023 - Funkoshop &copy;</p>
+       </footer>
+</body>
+</html>
+
