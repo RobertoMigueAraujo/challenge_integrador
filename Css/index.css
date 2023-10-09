@@ -342,15 +342,7 @@ background-position: top;
 margin-top: auto;   
 }
 
-
-
-
-
-
-
-
-
-/*animation*/
+/*animation va al final del codigo*/ 
 @keyframes fade {
     0% {
         opacity: 0;
