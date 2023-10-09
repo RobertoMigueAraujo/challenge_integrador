@@ -65,7 +65,9 @@ html {
 header,
 footer {
     font-family: var(--alternative-font);
-    color: var(--light-font-solid)
+    color: var(--light-font-solid);
+    background: #30343F;
+    
 }
 
 ul,
