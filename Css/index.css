@@ -320,6 +320,35 @@ background-position: top;
     font-weight: 700;
 }
 
+/*footer*/
+
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture {
+    order: 1; 
+}
+
+.footer__copy {
+    text-align: center;
+    flex-grow: 1; 
+margin-top: auto;   
+}
+
+
+
+
+
+
+
+
+
+/*animation*/
 @keyframes fade {
     0% {
         opacity: 0;
