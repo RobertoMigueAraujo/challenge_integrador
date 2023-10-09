@@ -18,22 +18,26 @@
     --dark-bg-solid:#30343F;
     --light-bg-solid:#FAFAFF;
     --light-font-solid: #FFFFFF; 
-
+    /*typography*/
     --base-font: 'Inter', sans-serif;
     --alternative-font: 'Raleway', sans-serif;
 
+/*font size*/
     --font-display: 4.6em;
     --font-jumbo: 3.8em;
     --font-xlarge: 3em;
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em;
 
+    /* spacing*/
     --spacing-128: 12.8rem;
     --spacing-68:  6.8rem ;  
     --spacing-36: 3.6rem ;
     --spacing-28: 2.8rem ;
+    --spacing-24: 2.4rem ;
+    --spacing-20: 2rem ;
     --spacing-16: 1.6 rem;
     --spacing-12: 1.2 rem;
     --spacing-8: 0.8 rem;
@@ -48,7 +52,6 @@
 
 a {
     text-decoration: none;
-    font-size: 2em;
     color: inherit;
     font-family: inherit;
 }
@@ -73,6 +76,71 @@ ol {
 p {
     font-size: 1.8em;
 }
+img{
+    max-width: 100%;
+}
 
 .container {max-width: 1200px
     ; margin: 0p auto;}
+    .with-icon{
+        display: flex;
+        align-items: center;
+    }
+
+/*header*/
+header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-36);
+}
+.navbar__logo{
+max-width: 300px;
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+.navbar__link{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16); 
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+.navbar__link:hover{
+    background-color: var(--primary-900);
+
+}
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.width-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    width: 300px;
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
+}

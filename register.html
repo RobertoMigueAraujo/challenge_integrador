@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Funkoshop</title>
+    <title>REGISTER</title>
     <link rel="stylesheet" href="./Css/index.css">
     
 </head>
 <body>
-   <header> <!-- Inicio del header -->
-    <nav>
-        <picture>
-        <a href="./index.html"></a>
-         <img src=./img/branding/logo_light_horizontal.svg   alt="Isologotipo de la marca Funkoshop">
-        </picture>
-        <u>
-           <li><a href="./pages/shop.html">SHOP</a></li>
-           <li><a href="./pages/contact.html">CONTACTO</a></li>
-           <li><a href="./pages/login.html">LOGIN</a></li>
-           <li><a href="./pages/cart.html"></a>
-               <img src="./img/icons/cart-icon.svg" alt="Icono de carrito"></li>
-           </u>
-    </nav>
-   </header> <!-- fin del header  -->
+    <header> 
+        <nav class="navbar">
+                <picture class="navbar__logo">
+                    <a href="./index.html">
+                        <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                    </a>
+                </picture>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item width-submenu">
+                    <a class="navbar__link width-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                    <li class="submenu-item"> <a href="" class="submenu__link">Funkos</a> </li>
+                    <li class="submenu-item"> <a href="" class="submenu__link">Remeras</a> </li>
+                    <li class="submenu-item"> <a href="" class="submenu__link">LLaveros</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li class="navbar__item>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/cart.html">
+                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito"> 
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header> <!--fin header-->
    <h1>CREA TU CUENTA</h1><br>
    <P>Completa el formulario para ser parte del mundo de los Funkos</P>
    <form action="post" enctype="application/x-www-form-urlencoded">
@@ -62,5 +79,6 @@
     </section>
     <p>ALL rights reserved 2023 - Funkoshop &copy;</p>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
