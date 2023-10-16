@@ -86,8 +86,10 @@ img{
     ; margin: 0p auto;}
     .with-icon{
         display: flex;
-        align-items: center;
+        align-items: center;  
     }
+    
+    
 
 /*header*/
 header{
@@ -341,6 +343,97 @@ background-position: top;
     flex-grow: 1; 
 margin-top: auto;   
 }
+
+/*register*/
+
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.register-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-medium);
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+}
+
+.register-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom:30px;
+}
+
+<div class="main-container">
+    <div class="register-title">
+        <h1>CREA TU CUENTA</h1>
+    </div>
+    <div class="register-text">
+        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+    </div>
+    <div class="register-form">
+        <form action="post" enctype="application/x-www-form-urlencoded">
+            <div class="form-field">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="John"><br><br>
+            </div>
+            <div class="form-field">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Doe"><br><br>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
+            </div>
+            <div class="form-field">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="********"><br><br>
+            </div>
+            <div class="form-field">
+                <label for="RepitaContraseña">Repita Contraseña:</label>
+                <input type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********"><br><br>
+            </div>
+            <div class="form-field">
+                <input type="checkbox" name="AceptarTerminos" id="AceptarTerminos" required>
+                <label for="AceptarTerminos">Aceptar <a href="#">Terminos y Condiciones</a></label>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*animation va al final del codigo*/ 
 @keyframes fade {

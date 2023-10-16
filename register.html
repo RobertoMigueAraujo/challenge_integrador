@@ -9,57 +9,68 @@
     
 </head>
 <body>
-    <header> 
+    <header>
         <nav class="navbar">
-                <picture class="navbar__logo">
-                    <a href="./index.html">
-                        <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
-                    </a>
-                </picture>
-            </div>
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                </a>
+            </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item width-submenu">
-                    <a class="navbar__link width-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                    <li class="submenu-item"> <a href="" class="submenu__link">Funkos</a> </li>
-                    <li class="submenu-item"> <a href="" class="submenu__link">Remeras</a> </li>
-                    <li class="submenu-item"> <a href="" class="submenu__link">LLaveros</a> </li>
-                    </ul>
+                    <a class="navbar__link width-icon" href="./pages/shop.html">VER TIENDA</a>
+                   
                 </li>
                 <li>
-                    <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="./pages/admin.html">ADMIN</a>
                 </li>
                 <li>
-                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
-                </li class="navbar__item>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="./pages/cart.html">
-                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito"> 
-                    </a>
+                    <a class="navbar__link" href="./pages/logout.html">SALIR</a>
                 </li>
-
             </ul>
         </nav>
     </header> <!--fin header-->
-   <h1>CREA TU CUENTA</h1><br>
-   <P>Completa el formulario para ser parte del mundo de los Funkos</P>
-   <form action="post" enctype="application/x-www-form-urlencoded">
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" id="nombre" placeholder="John"><br><br>
-    <label for="apellido">Apellido:</label>
-    <input type="text" name="apellido" id="apellido" placeholder="Doe"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
-    <label for="contraseña">Contraseña:</label>
-    <input type="password" name="contraseña" id="contraseña" placeholder="********"><br><br>
-    <label for="RepitaContraseña">Repita Contraseña:</label>
-    <input type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********"><br><br>
-    <button type="submit">Registrar</button> 
-    <input type="checkbox" name="AceptarTerminos"  id="AceptarTerminos" required>
-    <label for="AceptarTerminos">Aceptar <a href="#"> Terminos y Condiciones</a></label>
-
- </form>
- 
+    
+    <div class="main-container">
+        <div class="register-title">
+            <h1>CREA TU CUENTA</h1>
+        </div>
+        <div class="register-text">
+            <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+        </div>
+        <div class="register-form">
+            <form action="post" enctype="application/x-www-form-urlencoded">
+                <div class="form-field">
+                    <label class="custom-label" for="nombre">Nombre:</label>
+                    <input class="custom-input" type="text" name="nombre" id="nombre" placeholder="John"><br><br>
+                </div>
+                <div class="form-field">
+                    <label class="custom-label" for="apellido">Apellido:</label>
+                    <input class="custom-input" type="text" name="apellido" id="apellido" placeholder="Doe"><br><br>
+                </div>
+                <div class="form-field">
+                    <label class="custom-label" for="email">Email:</label>
+                    <input class="custom-input" type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
+                </div>
+                <div class="form-field">
+                    <label class="custom-label" for="contraseña">Contraseña:</label>
+                    <input class="custom-input" type="password" name="contraseña" id="contraseña" placeholder="********"><br><br>
+                 </div>
+                <div class="form-field">
+                    <label class="custom-label" for="RepitaContraseña">Repita Contraseña:</label>
+                    <input class="custom-input" type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********"><br><br>
+                </div>
+                <div class="form-field">
+                    <input class="custom-input" type="checkbox" name="AceptarTerminos" id="AceptarTerminos" required>
+                    <label class="bottom" for="AceptarTerminos">Aceptar <a href="#">Terminos y Condiciones</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+ <!--aca empieza el footer-->
 
  <footer class="footer">
     <nav class="navbar container">
