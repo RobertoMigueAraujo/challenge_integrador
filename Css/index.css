@@ -343,97 +343,85 @@ background-position: top;
     flex-grow: 1; 
 margin-top: auto;   
 }
-
 /*register*/
-
-
 .main-container {
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-   
-}
-
-.register-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: var(--font-medium);
+    padding-bottom: 20px;
+  }
+  
+  .custom-titulo {
+    font-size: 1.8em;
     font-weight: 700;
-    text-align: center;
-    padding: 30px;
-}
-
-.register-text {
-    font-family: 'Raleway', sans-serif;
-    font-size: var(--font-xsmall);
+    font-family: 'raleway', sans-serif;
+    padding: var(--spacing-20) var(--spacing-28);
+    margin-bottom: 5px; 
+  }
+  
+  .custom-subtitulo {
+    font-size: 1.8em;
     font-weight: 500;
-    text-align: center;
-    padding-bottom:30px;
-}
+    font-family: 'raleway', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .custom-input {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'inter', sans-serif;
+    color: rgba(185, 185, 185, 1);
+    text-align: left;
+    min-width: 150px; 
+    white-space: nowrap;
+    justify-content: left;
+    border:none; border-bottom:  2px solid red; 
+    margin-top: 15px;
+    vertical-align:middle;
+    vertical-align:bottom;
+    
+  }
+  .custom-label {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'inter', sans-serif;
+    text-align: left; 
+    vertical-align:middle;
+    vertical-align:bottom;
+    width: 250px; 
+    white-space: nowrap;
+  }
+  .custom-button{
+    display: inline-block;
+    color:  rgba(255, 255, 255, 1);
+     background-color: red; 
+     font-size: 12px;
+     font-family: 'inter', sans-serif;
+     font-weight:400;
+      border: none; padding: 10px; 
+      cursor: pointer; 
+      width:103px;
+      padding-bottom: 10px;
+      text-align:center;
+    margin-right: 10px;
+    margin-top: 20px;
+   
+  }
 
-<div class="main-container">
-    <div class="register-title">
-        <h1>CREA TU CUENTA</h1>
-    </div>
-    <div class="register-text">
-        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-    </div>
-    <div class="register-form">
-        <form action="post" enctype="application/x-www-form-urlencoded">
-            <div class="form-field">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="John"><br><br>
-            </div>
-            <div class="form-field">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Doe"><br><br>
-            </div>
-            <div class="form-field">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
-            </div>
-            <div class="form-field">
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" name="contraseña" id="contraseña" placeholder="********"><br><br>
-            </div>
-            <div class="form-field">
-                <label for="RepitaContraseña">Repita Contraseña:</label>
-                <input type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********"><br><br>
-            </div>
-            <div class="form-field">
-                <input type="checkbox" name="AceptarTerminos" id="AceptarTerminos" required>
-                <label for="AceptarTerminos">Aceptar <a href="#">Terminos y Condiciones</a></label>
-            </div>
-        </form>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .checkbox-container {
+    display:inline;
+     width: auto;
+       font-family: Inter; font-size: 18px; 
+    font-weight: 400;
+      text-align: right;
+      white-space: nowrap;
+     margin-top:10px;
+     }
+     .Terminos 
+     {  color:  #1D84B5; }
+  
 
 /*animation va al final del codigo*/ 
 @keyframes fade {

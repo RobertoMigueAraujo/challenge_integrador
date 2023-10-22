@@ -30,44 +30,37 @@
             </ul>
         </nav>
     </header> <!--fin header-->
-    
     <div class="main-container">
-        <div class="register-title">
-            <h1>CREA TU CUENTA</h1>
+        <h1 class="custom-titulo">CREA TU CUENTA</h1>
+        <p class="custom-subtitulo">Completa el formulario para ser parte del mundo de los Funkos</p>
+        <div class="form-field">
+            <label class="custom-label" for="nombre">Nombre:</label>
+            <input class="custom-input" type="text" name="nombre" id="nombre" placeholder="John">
         </div>
-        <div class="register-text">
-            <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+        <div class="form-field">
+            <label class="custom-label" for="apellido">Apellido:</label>
+            <input class="custom-input" type="text" name="apellido" id="apellido" placeholder="Doe">
         </div>
-        <div class="register-form">
-            <form action="post" enctype="application/x-www-form-urlencoded">
-                <div class="form-field">
-                    <label class="custom-label" for="nombre">Nombre:</label>
-                    <input class="custom-input" type="text" name="nombre" id="nombre" placeholder="John"><br><br>
-                </div>
-                <div class="form-field">
-                    <label class="custom-label" for="apellido">Apellido:</label>
-                    <input class="custom-input" type="text" name="apellido" id="apellido" placeholder="Doe"><br><br>
-                </div>
-                <div class="form-field">
-                    <label class="custom-label" for="email">Email:</label>
-                    <input class="custom-input" type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
-                </div>
-                <div class="form-field">
-                    <label class="custom-label" for="contraseña">Contraseña:</label>
-                    <input class="custom-input" type="password" name="contraseña" id="contraseña" placeholder="********"><br><br>
-                 </div>
-                <div class="form-field">
-                    <label class="custom-label" for="RepitaContraseña">Repita Contraseña:</label>
-                    <input class="custom-input" type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********"><br><br>
-                </div>
-                <div class="form-field">
-                    <input class="custom-input" type="checkbox" name="AceptarTerminos" id="AceptarTerminos" required>
-                    <label class="bottom" for="AceptarTerminos">Aceptar <a href="#">Terminos y Condiciones</a></label>
-                </div>
-            </form>
+        <div class="form-field">
+            <label class="custom-label" for="email">Email:</label>
+            <input class="custom-input" type="email" name="email" id="email" placeholder="johndoe@correo.com">
+        </div>
+        <div class="form-field">
+            <label class="custom-label" for="contraseña">Contraseña:</label>
+            <input class="custom-input" type="password" name="contraseña" id="contraseña" placeholder="********">
+        </div>
+        <div class="form-field">
+            <label class="custom-label" for="repitaContraseña">Repita Contraseña:</label>
+            <input class="custom-input" type="password" name="repitaContraseña" id="repitaContraseña" placeholder="********">
+        </div>
+        <div class="form-field">
+            <div class="checkbox-container">
+                <button type="submit" class="custom-button"> Registrar </button>
+                <input type="checkbox" name="aceptarTerminos" id="aceptarTerminos" required>
+                <label for="aceptarTerminos">Acepto<a href="#"  class="Terminos">Términos y Condiciones</a></label>
+            </div>
         </div>
     </div>
-    
     
     
  <!--aca empieza el footer-->
