@@ -40,143 +40,197 @@
         </nav>
     </header> <!--fin header-->
     
-   
-    <form action="" method="post" enctype="application/x-www-form-urlencoded"></form>
-    <label for="buscar">BUSCAR</label><br>
-    <input type="text" name="buscar" id="buscar" placeholder="item o categoria"> <br> <br>
-    <label for="OrdenarPor">ORDENAR POR</label><br>
-    <input type="text" name="OrdenarPor" id="OrdenarPor" placeholder="Mayor a menor"><br><br>
-    <label for="precio">PRECIO</label><br>
-   <label for="min">min</label>
-   <input type="text" name="min" id="min" spaceholder="0" style="width: 10px; height: 10px;" >
-   <label for="max">max</label>
-   <input type="text" name="max" id="max" spaceholder="0" style="width: 10px; height: 10px;"><br><br>
-   <label for="filtrar">FILTRAR</label><br><br>
-   <input type="checkbox" name="opcion[]" id="nuevos" value="NUEVOS">
-   <label for="nuevos">NUEVOS</label><br>
-   <input type="checkbox" name="opcion[]" id="ofertas" value="OFERTAS">
-   <label for="ofertas">OFERTAS</label><br>
-   <input type="checkbox" name="opcion[]" id="edicion especial" value="EDICION ESPECIAL">
-   <label for="edicion especial">EDICION ESPECIAL</label><br>
-   <input type="checkbox" name="opcion[]" id="favoritos" value="FAVORITOS">
-   <label for="favoritos">FAVORITOS</label><br>
-</aside>
-<section>
-<article>
-    <a href="">
-        <picture>
-            <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
-        </picture>
-        <div>
-            <p>STAR WARS</p>
-            <h4>STORMTROOPER LIGHTSABER</h4>
-            <p>$ 1799,99.-</p>
-            <p>3 CUOTAS SIN INTERES</p>
-        </div>
-    </a>
-</article>
-<article>        <a href="">
-    <picture>
-        <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
-    </picture>
-    <div>
-        <p>POKEMON</p>
-        <h4>PIDGEOTTO</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-</a></article>
+    <aside class="shop-container">
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="buscar">BUSCAR</label><br>
+            <input type="text" name="buscar" id="buscar" placeholder="item o categoria"> <br> <br>
+            <label for="OrdenarPor">ORDENAR POR</label><br>
+            <input type="text" name="OrdenarPor" id="OrdenarPor" placeholder="Mayor a menor"><br><br>
+            <label for="precio">PRECIO</label><br>
+            <label for="min">min</label>
+            <input type="text" name="min" id="min" placeholder="0" style="width: 10px; height: 10px;" >
+            <label for="max">max</label>
+            <input type="text" name="max" id="max" placeholder="0" style="width: 10px; height: 10px;"><br><br>
+            <label for="filtrar">FILTRAR</label><br> 
+            <input type="checkbox" name="opcion[]" id="nuevos" value="NUEVOS">
+            <label for="nuevos">NUEVOS</label><br>
+            <input type="checkbox" name="opcion[]" id="ofertas" value="OFERTAS">
+            <label for="ofertas">OFERTAS</label><br>
+            <input type="checkbox" name="opcion[]" id="edicion especial" value="EDICION ESPECIAL">
+            <label for="edicion especial">EDICION ESPECIAL</label><br>
+            <input type="checkbox" name="opcion[]" id="favoritos" value="FAVORITOS">
+            <label for ="favoritos">FAVORITOS</label><br>
+        </form>
+    </aside>
+    
+    <section class="shop-groups">
+    <section class="shop-products">
+        <!-- Grupo 1 de productos -->
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+        
+                <picture>
+                    <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">STAR WARS</p>
+                    <h4 class="shop-h4">STORMTROOPER LIGHTSABER</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">POKEMON</p>
+                    <h4 class="shop-h4">PIDGEOTTO</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+           
+                <picture>
+                    <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">HARRY POTTER</p>
+                    <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+    </section>
 
-<article>        <a href="">
-    <picture>
-        <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko dE luna Lovegood">
-    </picture>
-    <div>
-        <p>HARRY POTTER</p>
-        <h4>LUNA LOVEGOOD LION MASK</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-</a></article>
+    <section class="shop-products">
+        <!-- Grupo 2 de productos -->
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">STAR WARS</p>
+                    <h4 class="shop-h4">STORMTROOPER LIGHTSABER</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">POKEMON</p>
+                    <h4 class="shop-h4">PIDGEOTTO</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+            <a href="">
+                <picture>
+                    <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">HARRY POTTER</p>
+                    <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+    </section>
+    
+    <section class="shop-products">
+        <!-- Grupo 3 de productos -->
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+            <a href="">
+                <picture>
+                    <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">STAR WARS</p>
+                    <h4 class="shop-h4">STORMTROOPER LIGHTSABER</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">POKEMON</p>
+                    <h4  class="shop-h4">PIDGEOTTO</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                
+            <a href="">
+                <picture>
+                    <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">HARRY POTTER</p>
+                    <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+    </section>
 </section>
-<section>
 
-<article>
-    <a href="">
-    <picture>
-        <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
-    </picture>
-    <div>
-        <p>STAR WARS</p>
-        <h4>STORMTROOPER LIGHTSABER</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
+<div class="pagination">
+    <div class="left-arrow arrow">&lt;</div>
+    <div class="number-box">1</div>
+    <div class="number-box">2</div>
+    <div class="dots">...</div>
+    <div class="number-box">9</div>
+    <div class="number-box">10</div>
+    <div class="right-arrow arrow">&gt;</div>
+</div>
 
-</a>
-</article>
-
-<article>        <a href="">
-    <picture>
-        <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
-    </picture>
-    <div>
-        <p>POKEMON</p>
-        <h4>PIDGEOTTO</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-</a></article>
-<article>        <a href="">
-    <picture>
-        <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko dE luna Lovegood">
-    </picture>
-    <div>
-        <p>HARRY POTTER</p>
-        <h4>LUNA LOVEGOOD LION MASK</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-</a></article>
-</section>
-<section>
-<article>
-    <a href="">
-    <picture>
-        <img src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
-    </picture>
-    <div>
-        <p>STAR WARS</p>
-        <h4>STORMTROOPER LIGHTSABER</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-
-</a>
-</article>
-<article>        <a href="">
-    <picture>
-        <img src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
-    </picture>
-    <div>
-        <p>POKEMON</p>
-        <h4>PIDGEOTTO</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-</a></article>
-<article>        <a href="">
-    <picture>
-        <img src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko dE luna Lovegood">
-    </picture>
-    <div>
-        <p>HARRY POTTER</p>
-        <h4>LUNA LOVEGOOD LION MASK</h4>
-        <p>$ 1799,99.-</p>
-        <p>3 CUOTAS SIN INTERES</p>
-    </div>
-</a></article>
-</section>
 <footer class="footer">
     <nav class="navbar container">
         <ul class="navbar__item">
