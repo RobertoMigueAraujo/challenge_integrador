@@ -8,7 +8,7 @@
     <title>ITEM</title>
     
 </head>
-<body>
+<body class="custom-body-class">
     <header> 
         <nav class="navbar">
                 <picture class="navbar__logo">
@@ -49,58 +49,63 @@
         </nav>
     </header> <!--fin header-->
 
-    <main>
-        <section>
-            <article>
-                <picture>
+    <body class="custom-body-class">
+        <main>
+            <section class="item" id="destacado">
+                <article>
                     <img src="/img/star-wars/baby-yoda-1.webp" alt="Figura Baby Yoda">
-                </picture> 
-                <div>
-                    <p>STAR WARS</p>
-                    <h2>BABY YODA BLUEBALL</h2>
-                    <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, Edición limitada</p>
-                    <p>$1799,99</p>
-                    <!--Contador de cantidad de productos a comprar-->
-                    <p>Agregar al carrito</p>
-                    <p>Ver métodos de pago</p>
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </article>
-            
-        </section> 
-
-        <section>
-            <h2>PRODUCTOS RELACIONADOS</h2>
-            <article>
-                <picture><img src="/img/star-wars/trooper-1.webp" alt="Figura de Stormtrooper Lightsaber"></picture>
-                <div>
-                    <p>STAR WARS</p> 
-                    <h3>STORMTROOPER LIGHTSABER</h3>
-                    <p>$ 1799,99</p> 
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </article>
-            <article>
-                <picture><img src="/img/pokemon/pidgeotto-1.webp" alt="Figura Pidgeotto"></picture>
-                <div>
-                    <p>POKEMON</p> 
-                    <h3>PIDGEOTTO</h3>
-                    <p>$ 1799,99</p> 
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </article>
-            <article>
-                <picture><img src="/img/harry-potter/luna-1.webp" alt="Figura Luna Lovegood Lion Mask"></picture>
-                <div>
-                    <p>HARRY POTTER</p> 
-                    <h3>LUNA LOVEGOOD LION MASK</h3>
-                    <p>$ 1799,99</p> 
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </article>
-        </section>
-    </main>
-   
+                    <div>
+                        <p class="titulo1">STAR WARS</p>
+                        <h2 class="titulo2">BABY YODA BLUEBALL</h2>
+                        <p class="figura">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, Edición limitada</p>
+                        <p class="precio">$1799,99</p>
+                        <!-- Contador de cantidad de productos a comprar -->
+                        <div class="carrito">
+                            <p class="accion-carrito">Agregar al carrito</p>
+                            <p class="accion-pago">Ver métodos de pago</p>
+                            <div class="cantidad-placeholder">0</div>
+                            <div class="botones-carrito">
+                                <div class="boton-mas">+</div>
+                                <div class="boton-menos">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        
+            <section class="item" id="relacionados">
+                <h2 class="titulo-h2">PRODUCTOS RELACIONADOS</h2>
+                <article>
+                    <img class="img-izq" src="/img/star-wars/trooper-1.webp" alt="Figura de Stormtrooper Lightsaber">
+                    <div>
+                        <p class="titulo1">STAR WARS</p>
+                        <h3 class="titulo2">STORMTROOPER LIGHTSABER</h3>
+                        <p class="precio">$ 1799,99</p>
+                        <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="img-medio" src="/img/pokemon/pidgeotto-1.webp" alt="Figura Pidgeotto">
+                    <div>
+                        <p class="titulo1">POKEMON</p>
+                        <h3 class="titulo2">PIDGEOTTO</h3>
+                        <p class="precio">$ 1799,99</p>
+                        <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+                <article>
+                    <img class="img-derecha" src="/img/harry-potter/luna-1.webp" alt="Figura Luna Lovegood Lion Mask">
+                    <div>
+                        <p class="titulo1">HARRY POTTER</p>
+                        <h3 class="titulo2">LUNA LOVEGOOD LION MASK</h3>
+                        <p class="precio">$ 1799,99</p>
+                        <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+   <!--footer-->
     <footer class="footer">
         <nav class="navbar container">
             <ul class="navbar__item">

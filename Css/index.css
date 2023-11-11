@@ -82,11 +82,14 @@ img{
     max-width: 100%;
 }
 
-.container {max-width: 1200px
-    ; margin: 0p auto;}
+.container
+ {max-width: 1200px;
+    ; margin: 0 auto;
+}
     .with-icon{
         display: flex;
         align-items: center;  
+
     }
     
     
@@ -121,10 +124,10 @@ max-width: 300px;
     background-color: var(--primary-900);
 
 }
-.with-icon{
+.with-icon {
     display: flex;
     align-items: center;
-    gap: var(--spacing-8);
+    gap: var(--spacing-8); /
 }
 
 .width-submenu:hover .submenu {
@@ -349,6 +352,7 @@ margin-top: auto;
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
+  
   }
   
   .custom-titulo {
@@ -439,7 +443,11 @@ margin-top: auto;
     color: rgba(185, 185, 185, 1);
     font-size: 20px;
     font-weight: 500;
-}
+    width: 100%; 
+    margin: 0; 
+    padding: 5px; 
+    box-sizing: border-box; 
+  }
 
 
 .shop-container label {
@@ -448,15 +456,13 @@ margin-top: auto;
     font-size: 16px;
     font-weight: 500;
 }
-
-
 .shop-container input[type="text"]#min,
 .shop-container input[type="text"]#max {
-    width: 60.14px;
-    height: 27.52px;
-    border-radius: 0;
-    border: 1px solid rgba(48, 52, 63, 1);
-   
+   width:59.14px; 
+   height: 27.52px; 
+   border-radius: 0px;
+   border: 2px solid rgba(48, 52, 63, 1);
+   box-sizing: border-box; 
 }
 
 
@@ -472,105 +478,117 @@ margin-top: auto;
     color: rgba(185, 185, 185, 1);
 }
 
-.shop-products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
-}
-
-aside {
-    width: 243.04px;
-    height: 493.93px;
-    top: 212px;
-    left: 110px;
+  aside {
+    width: 221.04px; 
+    height: 471.93px; 
+    margin: 10px;
+   /** border: 1px solid black;**/
     border-radius: 6px;
-}
+    float: left;
+    background-color: white;
+  }
+  
+  
+    .shop-products {
+        display: grid;
+        width: 960.03px; 
+        height: 1608px; 
+       /** grid-template-rows: repeat(3, 512px);**/
+         grid-template-columns: repeat(3, 320.01px); /* Creamos tres columnas de 320.01px cada una */
+        grid-template-rows: repeat(3, 1fr); 
+        gap:10px; 
+        margin-bottom: 50px; 
+        align-items: center;
+        top: 212px;
+        left: 368px; 
+        gap: 24px; 
+        grid-row-gap: 10px;
 
-.shop-parrafo {
-    font-family: 'Inter', sans-serif; 
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.shop-h4 {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.shop-prix {
-    font-family: 'Inter', sans-serif; /* Agregado comillas y ajuste de fuente */
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.shop-cuotas {
-    font-family: 'Inter', sans-serif; 
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(29, 132, 181, 1);
-}
-
-
-.shop-products .product-wrapper {
-    position: relative; 
-}
-
-
-.shop-products .product-wrapper .product-badge {
-    content: "NUEVO"; 
-    position: absolute;
-    top: 7px;
-    left: 238.72px;
-    width: 49.4px;
-    height: 17px;
-    background-color: rgba(255, 51, 51, 1);
-    color: rgba(255, 255, 255, 1); 
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    border-radius: 6px; 
-}
-
-
-.shop-products .product-wrapper .product-badge::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 81.18px;
-    height: 30px;
-    background: rgba(255, 51, 51, 1);
-    border-radius: 6px;
-}
-
-.pagination {
-    width: 356px;
-    height: 44px;
-    top: 1888px;
-    left: 670.33px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: var(--spacing-28)var(--spacing-28);
-
-}
+    }
+     
+      
+      /* El resto del código CSS va aquí */
+      
+    .shop-parrafo {
+        font-family: 'Inter', sans-serif; 
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    .shop-h4 {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    .shop-prix {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    .shop-cuotas {
+        font-family: 'Inter', sans-serif; 
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(29, 132, 181, 1);
+    }
+    
+    .shop-products .product-wrapper {
+        position: relative;
+        box-sizing: border-box; 
+        border-radius: 12px; 
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    
+    .shop-products .product-wrapper .product-badge {
+        content:"";
+        position: absolute;
+        top: 10%;
+        left: 80%;
+        width: 20%;
+        height: 1.2em;
+        background-color: rgba(255, 51, 51, 1);
+        color: rgba(255, 255, 255, 1); 
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        border-radius: 6px; 
+        text-align: center;
+    
+    }
+  
+      
+    
+    .pagination {
+        margin: 0 auto;
+        text-align: center;
+        width: 356px;
+        height: 44px;
+        top: 1888px;
+        left: 670.33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: var(--spacing-28)var(--spacing-28);
+    
+    }
 
 .arrow,
 .number-box {
@@ -609,6 +627,22 @@ aside {
     color: #fff;
 }
 
+
+/*ITEM*/
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container {
+    flex-grow: 1;
+    margin-left: 20px; 
+}
+.contenido {
+    flex-grow: 1;
+    margin-left: 20px; 
+}
 
 
 
