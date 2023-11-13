@@ -80,7 +80,10 @@ p {
 }
 img{
     max-width: 100%;
+  
 }
+
+
 
 .container
  {max-width: 1200px;
@@ -628,20 +631,398 @@ margin-top: auto;
 }
 
 
-/*ITEM*/
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*ITEM*/ 
+/*primera seccion*/
+
+.primera-seccion {
+    width: 1191.84px;
+    height: 550px;
+    top: 212px;
+    left: 111.75px;
+   
 }
 
-.flex-container {
-    flex-grow: 1;
-    margin-left: 20px; 
+.primera-seccion article {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Coloca espacio entre la imagen y el contenido */
+    height: 100%; /* Hace que el artículo ocupe toda la altura del contenedor */
 }
-.contenido {
-    flex-grow: 1;
-    margin-left: 20px; 
+
+.primera-seccion .contenido {
+    width: 576.84px;
+   /* height: 320.73px;*/
+    position: relative; 
+
+}
+   .primera-seccion .titulo1 {
+    font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+
+
+   }
+   .primera-seccion .titulo2{
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  rgba(51, 51, 51, 1);
+   }
+    
+.primera-seccion .figura{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+
+}
+.primera-seccion .figura{
+    font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+
+}
+.primera-seccion .precio{
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+
+}
+.accion-pago{
+    font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(29, 132, 181, 1);
+width: 333.2px;
+height: 17px;
+top: 630.37px;
+left: 726.75px;
+display: block;
+}
+.cantidad-placeholder{
+   color: rgba(116, 116, 116, 1);
+   width: 13.16px;
+   height: 19.45px;
+   top: 573.85px;
+   left: 772.9px;
+border: 0.5px solid rgba(201, 201, 201, 1);
+width: 105.47px;
+height: 35.24px;
+top: 565.95px;
+left: 726.75px;
+text-align: center;
+vertical-align: top;
+display: inline-block; /* Para que estén en la misma línea */
+
+}
+.boton-mas,
+.boton-menos {
+    width: 18px;
+    height: 18px;
+    background: rgba(79, 79, 79, 1);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+
+
+.accion-carrito{
+    width: 181px;
+    height: 37.91px;
+    top: 565.57px;
+    left: 888.33px;
+    background: rgba(255, 51, 51, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+cursor: pointer;
+display: inline-flex; 
+}
+
+.primera-seccion article {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Coloca espacio entre la imagen y el contenido */
+    height: 100%; /* Hace que el artículo ocupe toda la altura del contenedor */
+}
+.boton-mas,
+.boton-menos {
+    display: block; /* Asegúrate de que Mas y Menos estén en bloque */
+}
+
+/*segunda seccion */
+
+.segunda-seccion{
+    width: 1218.25px;
+height: 623px;
+top: 830px;
+left: 110px;
+display: flex;
+}
+.article1{
+    width: 358.57px;
+height: 512px;
+top: 941px;
+left: 110px;
+
+}
+.img1{
+    width: 358.57px;
+    height: 352px;
+    top: 941px;
+    left: 110px;
+    
+}
+.img2{
+    width: 358.57px;
+    height: 352px;
+    top: 941px;
+    left: 539.84px;
+    
+}
+.img3{
+    width: 358.57px;
+    height: 352px;
+    top: 941px;
+    left: 969.68px;
+    
+}
+.titulo-h2{
+    width: 715.07px;
+height: 54px;
+top: 830px;
+left: 110px;
+font-family: Raleway;
+font-size: 46px;
+font-weight: 700;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(17, 17, 17, 1);
+
+
+
+
+}
+ .article1.titulo1{
+    width: 82.51px;
+    height: 17px;
+    top: 1321px;
+    left: 124.26px;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+}
+.article1 .titulo2{
+    width: 276.06px;
+    height: 22px;
+    top: 1351px;
+    left: 124.26px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+   color: rgba(17, 17, 17, 1);
+
+}
+.article1.precio{
+    width: 88.62px;
+    height: 19px;
+    top: 1386px;
+    left: 124.26px;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+
+    
+}
+.article1.cuotas{
+    width: 140.58px;
+    height: 15px;
+    top: 1419px;
+    left: 124.26px;
+    font-family: Inter;
+font-size: 12px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(29, 132, 181, 1);
+
+}
+.article2.titulo1{
+    width: 73.34px;
+    height: 17px;
+    top: 1321px;
+    left: 554.1px;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+
+}
+.article2.titulo2{
+    width: 107.98px;
+    height: 22px;
+    top: 1351px;
+    left: 554.1px;
+    font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+background: rgba(17, 17, 17, 1);
+
+    
+}
+.article2.precio{
+    width: 88.62px;
+    height: 19px;
+    top: 1386px;
+    left: 554.1px;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+background: rgba(51, 51, 51, 1);
+
+
+
+}
+.article2.cuotas{
+    width: 140.58px;
+    height: 15px;
+    top: 1419px;
+    left: 554.1px;
+    font-family: Inter;
+font-size: 12px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(29, 132, 181, 1);
+
+}
+.article3.titulo1{
+    width: 109px;
+    height: 17px;
+    top: 1321px;
+    left: 983.95px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+color: rgba(51, 51, 51, 1);
+
+    
+}
+.article3.titulo2{
+    width: 266.89px;
+    height: 22px;
+    top: 1351px;
+    left: 983.95px;
+    font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(17, 17, 17, 1);
+
+}
+.article3.precio{
+    width: 88.62px;
+    height: 19px;
+    top: 1386px;
+    left: 983.95px;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(51, 51, 51, 1);
+
+}
+.article3.cuotas{
+    width: 140.58px;
+    height: 15px;
+    top: 1419px;
+    left: 983.95px;
+    font-family: Inter;
+font-size: 12px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(29, 132, 181, 1);
+
+    
+}
+.article2{
+    width: 358.57px;
+height: 512px;
+top: 941px;
+left: 539.84px;
+
+}
+.article3{
+    width: 358.57px;
+height: 512px;
+top: 941px;
+left: 969.68px;
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+
 }
 
 
