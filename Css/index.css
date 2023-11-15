@@ -28,7 +28,7 @@
     --font-xlarge: 3em;
     --font-large: 2.4em;
     --font-medium: 1.8em;
-    --font-small: 1.6em;
+    --font-small: 
     --font-xsmall: 1.4em;
 
     /* spacing*/
@@ -170,8 +170,7 @@ background-position: top;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+
     backdrop-filter:  blur(2px) brightness(.9);
 }
 .hero__content{
@@ -379,7 +378,6 @@ margin-top: auto;
     font-weight: 400;
     font-family: 'inter', sans-serif;
     color: rgba(185, 185, 185, 1);
-    text-align: left;
     min-width: 150px; 
     white-space: nowrap;
     justify-content: left;
@@ -394,7 +392,7 @@ margin-top: auto;
     font-size: 24px;
     font-weight: 400;
     font-family: 'inter', sans-serif;
-    text-align: left; 
+
     vertical-align:middle;
     vertical-align:bottom;
     width: 250px; 
@@ -427,7 +425,7 @@ margin-top: auto;
      margin-top:10px;
      }
      .Terminos 
-     {  color:  #1D84B5; }
+     {  color: var(--Secondary-solid)}
 
 
 
@@ -449,7 +447,6 @@ margin-top: auto;
     width: 100%; 
     margin: 0; 
     padding: 5px; 
-    box-sizing: border-box; 
   }
 
 
@@ -464,9 +461,7 @@ margin-top: auto;
    width:59.14px; 
    height: 27.52px; 
    border-radius: 0px;
-   border: 2px solid rgba(48, 52, 63, 1);
-   box-sizing: border-box; 
-}
+   border: 2px solid rgba(48, 52, 63, 1);}
 
 
 #min::placeholder, #max::placeholder {
@@ -502,8 +497,7 @@ margin-top: auto;
         gap:10px; 
         margin-bottom: 50px; 
         align-items: center;
-        top: 212px;
-        left: 368px; 
+      
         gap: 24px; 
         grid-row-gap: 10px;
 
@@ -517,8 +511,6 @@ margin-top: auto;
         font-size: 14px;
         font-weight: 500;
         line-height: 17px;
-        letter-spacing: 0em;
-        text-align: left;
     }
     
     .shop-h4 {
@@ -526,8 +518,6 @@ margin-top: auto;
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
     }
     
     .shop-prix {
@@ -535,8 +525,7 @@ margin-top: auto;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
+      
     }
     
     .shop-cuotas {
@@ -544,9 +533,9 @@ margin-top: auto;
         font-size: 12px;
         font-weight: 700;
         line-height: 15px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(29, 132, 181, 1);
+       
+        color: var(--Secondary-solid)
+        ;
     }
     
     .shop-products .product-wrapper {
@@ -560,8 +549,7 @@ margin-top: auto;
     .shop-products .product-wrapper .product-badge {
         content:"";
         position: absolute;
-        top: 10%;
-        left: 80%;
+     
         width: 20%;
         height: 1.2em;
         background-color: rgba(255, 51, 51, 1);
@@ -583,8 +571,7 @@ margin-top: auto;
         text-align: center;
         width: 356px;
         height: 44px;
-        top: 1888px;
-        left: 670.33px;
+     
         display: flex;
         justify-content: center;
         align-items: center;
@@ -631,399 +618,171 @@ margin-top: auto;
 }
 
 
-/*ITEM*/ 
-/*primera seccion*/
+/* ITEM */
 
+/* Primera sección */
 .primera-seccion {
     width: 1191.84px;
     height: 550px;
-    top: 212px;
-    left: 111.75px;
-   
 }
 
 .primera-seccion article {
     display: flex;
-    align-items: center; /* Centra los elementos verticalmente */
-    justify-content: space-between; /* Coloca espacio entre la imagen y el contenido */
-    height: 100%; /* Hace que el artículo ocupe toda la altura del contenedor */
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .primera-seccion .contenido {
     width: 576.84px;
-   /* height: 320.73px;*/
-    position: relative; 
-
+    /* height: 320.73px; */
+    position: relative;
 }
-   .primera-seccion .titulo1 {
-    font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
 
+.primera-seccion .titulo1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--Dark-solid)
+}
 
-   }
-   .primera-seccion .titulo2{
-    font-family: Inter;
-    font-size: 38px;
+.primera-seccion .titulo2 {
+    font: 700 38px/46px 'Inter', sans-serif;
+    color:var(--Dark-solid)
+}
+
+.primera-seccion .figura {
+    font: 400 24px/29px 'Inter', sans-serif;
+    color: var(--Dark-solid)
+}
+
+.primera-seccion .precio {
+    font: 400 38px/46px 'Inter', sans-serif;
+    color: var(--dark-bg-solid);
+}
+
+.pago {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 46px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:  rgba(51, 51, 51, 1);
-   }
+    line-height: 17px;
+    color: var(--Secondary-solid);
     
-.primera-seccion .figura{
-    font-family: Inter;
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
+}
 
-}
-.primera-seccion .figura{
-    font-family: Inter;
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
+.cantidad-input {
+    color: rgba(116, 116, 116, 1);
+    border: 0.5px solid rgba(201, 201, 201, 1);
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    width: 105.47px;
+    height: 35.24px;
+    top: 565.95px;
+    left: 726.75px;
+    }
 
-}
-.primera-seccion .precio{
-    font-family: Inter;
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 46px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(51, 51, 51, 1);
-
-}
-.accion-pago{
-    font-family: Inter;
-font-size: 14px;
-font-weight: 700;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(29, 132, 181, 1);
-width: 333.2px;
-height: 17px;
-top: 630.37px;
-left: 726.75px;
-display: block;
-}
 .cantidad-placeholder{
-   color: rgba(116, 116, 116, 1);
-   width: 13.16px;
-   height: 19.45px;
-   top: 573.85px;
-   left: 772.9px;
-border: 0.5px solid rgba(201, 201, 201, 1);
-width: 105.47px;
-height: 35.24px;
-top: 565.95px;
-left: 726.75px;
+height: 19.45px;
+top: 573.85px;
+left: 772.9px;
+color: rgba(116, 116, 116, 1);
 text-align: center;
-vertical-align: top;
-display: inline-block; /* Para que estén en la misma línea */
 
 }
+
 .boton-mas,
 .boton-menos {
     width: 18px;
     height: 18px;
     background: rgba(79, 79, 79, 1);
-    color: #fff;
-    cursor: pointer;
-    display: block;
-}
-
-
-.accion-carrito{
-    width: 181px;
-    height: 37.91px;
-    top: 565.57px;
-    left: 888.33px;
-    background: rgba(255, 51, 51, 1);
     color: rgba(255, 255, 255, 1);
-    font-family: Inter;
-font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;
-cursor: pointer;
-display: inline-flex; 
+    cursor: pointer;
+    /*display: block;*/
+    margin-left:10px;
+    text-align: center;
 }
 
-.primera-seccion article {
-    display: flex;
-    align-items: center; /* Centra los elementos verticalmente */
-    justify-content: space-between; /* Coloca espacio entre la imagen y el contenido */
-    height: 100%; /* Hace que el artículo ocupe toda la altura del contenedor */
-}
-.boton-mas,
-.boton-menos {
-    display: block; /* Asegúrate de que Mas y Menos estén en bloque */
-}
-
-/*segunda seccion */
-
-.segunda-seccion{
-    width: 1218.25px;
-height: 623px;
-top: 830px;
-left: 110px;
-display: flex;
-}
-.article1{
-    width: 358.57px;
-height: 512px;
-top: 941px;
-left: 110px;
-
-}
-.img1{
-    width: 358.57px;
-    height: 352px;
-    top: 941px;
-    left: 110px;
-    
-}
-.img2{
-    width: 358.57px;
-    height: 352px;
-    top: 941px;
-    left: 539.84px;
-    
-}
-.img3{
-    width: 358.57px;
-    height: 352px;
-    top: 941px;
-    left: 969.68px;
-    
-}
-.titulo-h2{
-    width: 715.07px;
-height: 54px;
-top: 830px;
-left: 110px;
-font-family: Raleway;
-font-size: 46px;
-font-weight: 700;
-line-height: 54px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(17, 17, 17, 1);
-
-
-
-
-}
- .article1.titulo1{
-    width: 82.51px;
-    height: 17px;
-    top: 1321px;
-    left: 124.26px;
-    font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
-}
-.article1 .titulo2{
-    width: 276.06px;
-    height: 22px;
-    top: 1351px;
-    left: 124.26px;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 700;
+.carro {
+    background: var(--primary-solid);
+    color: var(--light-bg-solid);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-medium);
+    font-weight: 400;
     line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-   color: rgba(17, 17, 17, 1);
-
-}
-.article1.precio{
-    width: 88.62px;
-    height: 19px;
-    top: 1386px;
-    left: 124.26px;
-    font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
-
-    
-}
-.article1.cuotas{
-    width: 140.58px;
-    height: 15px;
-    top: 1419px;
-    left: 124.26px;
-    font-family: Inter;
-font-size: 12px;
-font-weight: 700;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(29, 132, 181, 1);
-
-}
-.article2.titulo1{
-    width: 73.34px;
-    height: 17px;
-    top: 1321px;
-    left: 554.1px;
-    font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
-
-}
-.article2.titulo2{
-    width: 107.98px;
-    height: 22px;
-    top: 1351px;
-    left: 554.1px;
-    font-family: Inter;
-font-size: 18px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-background: rgba(17, 17, 17, 1);
-
-    
-}
-.article2.precio{
-    width: 88.62px;
-    height: 19px;
-    top: 1386px;
-    left: 554.1px;
-    font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-background: rgba(51, 51, 51, 1);
-
+    text-align: center;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 181px;
+height: 37.91px;
+top: 565.57px;
+left: 888.33px;
 
 
 }
-.article2.cuotas{
-    width: 140.58px;
-    height: 15px;
-    top: 1419px;
-    left: 554.1px;
-    font-family: Inter;
-font-size: 12px;
-font-weight: 700;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(29, 132, 181, 1);
-
+.carrito {
+    display: flex; 
+  /* justify-content: space-between; */
+    align-items: center; 
+  }
+/* Segunda sección */
+.segunda-seccion {
+    width: 1218.25px;
+    height: 623px;
+    display: flex;
 }
-.article3.titulo1{
-    width: 109px;
-    height: 17px;
-    top: 1321px;
-    left: 983.95px;
-    font-family: Inter;
-    font-size: 14px;
+
+.article1,
+.article2,
+.article3 {
+    width: 358.57px;
+    height: 512px;
+    top: 941px;
+}
+
+.titulo-h2 {
+    width: 715.07px;
+    height: 54px;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+    line-height: 54px;
+    color: var(--Dark-solid);
+}
+
+.titulo1 {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-small);
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    
-color: rgba(51, 51, 51, 1);
-
-    
+    color: var(--Dark-solid);
 }
-.article3.titulo2{
-    width: 266.89px;
-    height: 22px;
-    top: 1351px;
-    left: 983.95px;
-    font-family: Inter;
-font-size: 18px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(17, 17, 17, 1);
 
+.titulo2 {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-medium);
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--Dark-solid);
 }
-.article3.precio{
-    width: 88.62px;
-    height: 19px;
-    top: 1386px;
-    left: 983.95px;
-    font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(51, 51, 51, 1);
 
+.precio {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--Dark-solid);
 }
-.article3.cuotas{
-    width: 140.58px;
-    height: 15px;
-    top: 1419px;
-    left: 983.95px;
-    font-family: Inter;
-font-size: 12px;
-font-weight: 700;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-color: rgba(29, 132, 181, 1);
 
-    
+.cuotas {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    color: rgba(29, 132, 181, 1);
 }
-.article2{
-    width: 358.57px;
-height: 512px;
-top: 941px;
-left: 539.84px;
 
-}
-.article3{
-    width: 358.57px;
-height: 512px;
-top: 941px;
-left: 969.68px;
-font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-
-
-}
 
 
 
