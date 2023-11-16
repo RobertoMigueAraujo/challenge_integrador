@@ -48,9 +48,9 @@
             <input type="text" name="OrdenarPor" id="OrdenarPor" placeholder="Mayor a menor"><br><br>
             <label for="precio">PRECIO</label><br>
             <label for="min">min</label>
-            <input type="text" name="min" id="min" placeholder="0" style="width: 10px; height: 10px;" >
+            <input type="text" name="min" id="min" placeholder="0">
             <label for="max">max</label>
-            <input type="text" name="max" id="max" placeholder="0" style="width: 10px; height: 10px;"><br><br>
+            <input type="text" name="max" id="max" placeholder="0">    
             <label for="filtrar">FILTRAR</label><br> 
             <input type="checkbox" name="opcion[]" id="nuevos" value="NUEVOS">
             <label for="nuevos">NUEVOS</label><br>
@@ -63,7 +63,8 @@
         </form>
     </aside>
     <!--esta es la parte de shop-->
-    <section class="shop-groups">
+<div class="shop-principal"  id="shop-principal">
+<section class="shop-groups">
     <section class="shop-products">
         <!-- Grupo 1 de productos -->
         <article>
@@ -220,7 +221,7 @@
         </article>
     </section>
 </section>
-
+</div> 
 <div class="pagination">
     <div class="left-arrow arrow">&lt;</div>
     <div class="number-box">1</div>
