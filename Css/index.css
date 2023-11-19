@@ -1206,6 +1206,115 @@ padding-top: 10px;
 .carta1, .carta2{
     display: flex;
 }
+
+
+/*admin*/
+.main{
+    margin-top: 30px;
+}/*
+.tabla-productos{
+width: 1093.77px;
+height: 844.45px;
+}*/
+.titulos-productos{
+    width: 818.77px;
+height: 29px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0.04em;
+text-align: right;
+
+}
+tbody{
+    width: 1086.27px;
+height: 61px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 500;
+line-height: 61px;
+letter-spacing: 0.04em;
+text-align: left;
+color: #1F1F1F;
+
+}
+thead tr{
+    width: 1086.27px;
+    height: 61px;
+    font-family: Inter;
+font-size: 24px;
+font-weight: 500;
+line-height: 61px;
+letter-spacing: 0.04em;
+text-align: left;
+
+}
+.lupa{
+    width: 590.88px;
+height: 44.28px;
+top: 180px;
+left: 110px;
+border-radius: 6px;
+border: 2px solid #30343F;
+}
+.lupa-productos img{
+    width: 30.8px;
+height: 30.76px;
+top: 5.25px;
+left: 5.25px;
+background: #1F1F1F;
+}
+.placeholder-productos{
+width: 529.76px;
+height: 44.28px;
+
+border-radius: 6px;
+border: 2px solid #30343F;
+}
+ table tbody tr td a button img {
+    width: 32px;
+    height: 33px;
+    padding: 3.78px 3.63px 4.13px 4px;
+  }
+  .listado{
+height: 49px;
+display: contents;
+font-family: Raleway;
+font-size: 42px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #1F1F1F;
+
+  }
+  .agregar{
+    display: flex;
+    float: right;
+    width: 198px;
+height: 52px;
+margin-right: 60px;
+  }
+.search-form{
+    width: 590.88px;
+height: 44.28px;
+border-radius: 6px;
+border: 2px solid #30343F;
+display: flex;
+margin-left: 40px;
+}
+
+.id, .product, .categoria {
+    text-align: left;
+
+  }
+  
+  .codigo {
+    text-align: center;
+  }
+  
+  
 /*animation va al final del codigo*/ 
 @keyframes fade {
     0% {

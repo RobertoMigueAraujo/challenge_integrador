@@ -30,27 +30,38 @@
             </ul>
         </nav>
     </header> <!--fin header-->
-    <main>
+
+    <main class="main">
         <form id="search-form">
-            <img src="/img/icons/search_icon.svg" alt="Ícono de lupa" />
-            <input type="text" id="search-input" placeholder="Código, nombre o categoría" />  
+           
+            <img class="lupa-productos" src="/img/icons/search_icon.svg" alt="Ícono de lupa" />
+            <input class="placeholder-productos" id="search-input" placeholder="Código, nombre o categoría" />  
+    
         </form>
 
-        <h1>TABLA DE PRODUCTOS</h1>
-        <h2>AGREGAR</h2>
-        <a href="enlace-para-agregar"><button><img src="/img/icons/edit_pencil.svg" alt="Agregar Producto"></button></a>
+        <h1 class="listado">LISTADO DE PRODUCTOS</h1>
+
+        <div class="agregar">
+        <h2 >AGREGAR</h2>
+    
+        <a href="enlace-para-agregar"><button><img src="/img/icons/" alt="Agregar Producto"></button></a>
+    </div>
+        <div class="tabla-productos">
         <table>
         <thead>
+            <div class="titulos-productos">
             <tr>
-                <th>ID</th>
-                <th>Código</th>
-                <th>Nombre del Producto</th>
-                <th>Categoría</th>
+                <th class="id">ID</th>
+                <th class="codigo">Código</th>
+                <th class="product">Nombre del Producto</th>
+                <th class="categoria">Categoría</th>
                 <th></th>
                 <th></th>
             </tr>
+        </div>
         </thead>
         <tbody>
+
             <tr>
                 <td>1</td>
                 <td>STW001001</td>
@@ -59,6 +70,7 @@
                 <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
                 <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
             </tr>
+      
             <tr>
                 <td>2</td>
                 <td>STW001002</td>
@@ -67,9 +79,99 @@
                 <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
                 <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
             </tr>
+            <tr>
+                <td>3</td>
+                <td>STW001003</td>
+                <td>Luke Skylwalker & Grogu </td>
+                <td>STAR WARS </td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>STW001004</td>
+                <td>Stormtrooper Lightsaber</td>
+                <td>STAR WARS</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>PKM001001</td>
+                <td>Charmander Smiley</td>
+                <td>STAR WARS</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>STW001002</td>
+                <td>Dragonite Hi!</td>
+                <td>POKEMON</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>STW001003</td>
+                <td>Pidgeotto Flying</td>
+                <td>POKEMON</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>STW001004</td>
+                <td>Pikachu Smiley</td>
+                <td>POKEMON</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>STW001005</td>
+                <td>Vulpix Fancy</td>
+                <td>POKEMON</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>HPT001001</td>
+                <td>Harry Potter & Hegwid</td>
+                <td>HARRY POTTER</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>HPT001002</td>
+                <td>Herminione Ball Dress</td>
+                <td>HARRY POTTER</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>HPT001003</td>
+                <td>Luna Lovegood Lion Mask</td>
+                <td>HARRY POTTER</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>HPT001004</td>
+                <td>Snape Patronus</td>
+                <td>HARRY POTTER</td>
+                <td><a href="enlace-para-editar"><button><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button></a></td>
+                <td><a href="enlace-para-eliminar"><button><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button></a></td>
+            </tr>
         </tbody>
     </table>
+</div>
     </main>
+<!--aca empieza el footer-->
     <footer class="footer">
         <nav class="navbar container">
             <ul class="navbar__item">
