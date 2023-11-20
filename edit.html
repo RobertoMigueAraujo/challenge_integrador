@@ -30,64 +30,76 @@
             </ul>
         </nav>
     </header> <!--fin header-->
+
+
     <main>
-        <h1>EDITAR ITEM</h1>
-        <label for="categoria">Selecciona una categoría:</label>
+        <h1 class="edit-titulo">EDITAR ITEM</h1>
+
+        <div class="categoria-edit">
+        <label for="categoria">Categoría:</label>
     <select id="categoria">
         <option value="Figuras">Figuras</option>
         <option value="Edicion Limitada">Edicion Limitada</option>
         <option value="Accesorios">Aceesorios</option>
     </select>
+</div>
 
-    <br><br>
+        <div class="licencia-edit">
 
-    <label for="licencia">Selecciona una licencia:</label>
+    <label for="licencia">Licencia:</label>
     <select id="licencia">
         <option value="Naruto Shippuden">Naruto Shippuden</option>
         <option value="Star Wars">Star Wars</option>
-        <option value="Harry Potter">Harry Potter/option>
+        <option value="Harry Potter">Harry Potter</option>
     </select>
-    <h2>Agregar Nombre de Figura</h2>
+</div>
     <form id="figura-form">
-        <label for="nombre">Nombre de la Figura:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br><br>
-        <label for="descripcion">Descripción de la Figura:</label>
-        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
-        <br><br>
+        <div class="edit-productos">
+        <label for="nombre">Nombre del producto:</label>
+     <input type="text" id="nombre" name="nombre" required placeholder="Kakashi Hatake Shippuden Saga" class="nombre-producto>
+     <label for=""></label>
+        <textarea  id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori." class="descripcion-producto"></textarea>
+       <div class="sku">
         <label for="sku">SKU:</label>
-        <input type="text" id="sku" name="sku" required>
-        <br><br>
-
+        <input type="text" id="sku" name="sku" required placeholder="NAR001012" class="sku-producto">
+    </div>
+<div class="precio">
         <label for="precio">Precio:</label>
-        <input type="number" id="precio" name="precio" step="0.01" required>
-        <br><br>
-
+        <input type="number" id="precio" name="precio" step="0.01" required placeholder="$ 1.799,00" class="precio-producto">
+    </div>
+<div class="stock">
         <label for="stock">Stock:</label>
-        <input type="number" id="stock" name="stock" required>
-        <br><br>
+        <input type="number" id="stock" name="stock" required placeholder="10" class="stock-producto">
+    </div>
 
+<div class="edit-descuento">
+    <div class="descuento">
         <label for="descuento">Descuento:</label>
-        <input type="number" id="descuento" name="descuento">
-        <br><br>
-
+        <input type="number" id="descuento" name="descuento" placeholder="10%" class="descuento-producto">
+    </div>
+    <div class="cuota">
         <label for="cuotas">Cuotas:</label>
-        <select id="cuotas" name="cuotas">
-            <option value="3 cuotas">3 cuotas</option>
-            <option value="6 cuotas">6 cuotas</option>
-            <option value="9 cuotas">9 cuotas</option>
+        <select id="cuotas" name="cuotas" class="cuotas-producto">
+            <option value="3 cuotas">3 Cuotas sin interés</option>
+            <option value="6 cuotas">6 Cuotas sin interés</option>
+            <option value="9 cuotas">9 Cuotas sin interés</option>
         </select>
-        <br><br>
-
+    </div>
+</div>
         <label for="imagenes">Imágenes:</label>
         <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
-        <img src="/img/pokemon/charmander-1.webp" alt="Imagen 1 del producto">
-        <img src="/img/pokemon/charmander-box.webp" alt="Imagen 1 del producto">
-
-        <br><br>
-        <input type="submit" value="Modificar Producto">
+        <div class="imagenes">
+        <div class="imagen-izquierda">
+            <img src="img/pokemon/charmander-1.webp" alt="Imagen frente">
+          </div>
+          <div class="imagen-derecha">
+            <img src="/img/pokemon/charmander-box.webp" alt="Imagen dorso">
+          </div>
+        </div>
+        <input type="submit" value="Modificar Producto" class="modificar-producto">
     </form>
-
+    
+      
     </main>
     <!--aca empieza el footer-->
 

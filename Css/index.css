@@ -1475,10 +1475,278 @@ color: #1D84B5;
   }
   .login-container {
     display: block;
-    width: 50%; /* Ajusta esto al ancho que desees */
-    margin: 0 auto; /* Centra el div */
+    width: 50%; 
+    margin: 0 auto; 
   }
+  /*edit*/
+.edit-titulo{
+    font-family: Raleway;
+font-size: 2em;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0.04em;
+text-align: left;
+color: var(--Dark-solid)
+
+}
+.imagenes{
+    display: flex;
+    width: 300px;
+}
+.imagen-izquierda .imagen-derecha{
+   border-top: 0px;
+   border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #FF3333;
+}
+.categoria-edit{
+    width: 387.29px;
+height: 44.28px;
+
+
+}
+.categoria label{
+    width: 125px;
+    height: 29px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    text-align: right;
+color:   var(--Dark-solid) 
+}
+.categoria select{
+    width: 71px;
+height: 24px;
+
+font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--Dark-solid);
+
+}
+.licencia-edit{
+    width: 387.09px;
+    height: 44.28px;
   
+    
+}
+.licencia label{
+    width: 107px;
+    height: 29px;
+    font-family: Inter;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0.04em;
+text-align: left;
+color:var(--Dark-300);
+
+}
+.licencia select{
+    width: 174px;
+    height: 24px;
+text-align: left;
+font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.modificar-producto{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+   color: #FFFFFF;
+    background: #FF3333;
+    cursor: pointer;
+border: none;
+width: 175px;
+height: 44.33px;
+
+}
+.categoria-edit{
+    width: 387.29px;
+height: 44.28px;
+
+}
+.licencia-edit{
+    width: 387.09px;
+height: 44.28px;
+
+
+}
+
+.login-productos{
+    width: 662.4px;
+height: 29px;
+display:flex
+
+}
+.edit-descuento{
+    width: 680.81px;
+height: 44px;
+
+display:flex;
+}
+.edit-productos label{
+    width: 267px;
+height: 29px;
+top: 348.71px;
+left: 109.92px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.04em;
+text-align: right;
+color:  #000000;
+
+}
+.nombre-producto{
+    width: 296px;
+height: 22px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #1F1F1F;
+
+}
+.sku{
+    width: 198.16px;
+    height: 29px;
+    border: 2px solid #FF3333;
+}
+.sku label{
+    width: 59px;
+height: 29px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #000000;
+}
+.sku-producto{
+    width: 105px;
+    height: 22px;
+   
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #111111;
+border: 2px solid #FF3333;
+}
+.precio{
+    width: 227.96px;
+height: 29px;
+border: 2px solid #FF3333;
+}
+
+.precio label{
+    width: 84px;
+    height: 29px;
+  
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    text-align: right;
+   color: #000000;
+
+}
+.precio-producto{
+   
+    width: 95px;
+    height: 22px;
+    
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #1F1F1F;
+
+
+}
+.descuento{
+    width: 318.27px;
+height: 29px;
+border: 2px solid #FF3333
+}
+.descuento label{
+    width: 138px;
+    height: 29px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: #000000;
+
+}
+.descuento-producto{
+    width: 36px;
+height: 22px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #1F1F1F;
+border: 2px solid #FF3333;
+
+}
+.cuota{
+    width: 680.81px;
+height: 44px;
+border: 2px solid #FF3333;
+}
+.cuotas label{
+    width: 138px;
+    height: 29px;
+  
+    font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.04em;
+text-align: right;
+color: #000000;
+
+}
+.cuotas-producto{
+    width: 55px;
+height: 27.36px;
+
+border: 2px solid #FF3333
+}
+.cuotas-producto select{
+    width: 346px;
+height: 44px;
+
+
+}
 /*animation va al final del codigo*/ 
 @keyframes fade {
     0% {
