@@ -48,7 +48,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+  /*  padding: 0;*/
     box-sizing: border-box;
 }
 
@@ -255,13 +255,65 @@ background-position: top;
 .collection__link:hover {
     background-color: var(--primary-900);
 }
-
+/*ITEM*/
 /* slider */
+
+.item--info{
+   display: flex;
+
+}
+.item--submit{
+    background-color: #FF3333;
+    color: #FFFFFF;
+    cursor:pointer;
+font-weight: 400;
+border:1px solid transparent;
+ }
+ .item--info h2{
+    font-weight: 700;
+ }
+ .item--input{
+   width:15%;
+   flex-shrink: 0;
+   text-align: center;
+ }
+ .item-cart {
+    display: flex;
+    gap: 10px;
+    padding:10px;
+}
+.item--quantity{
+    background-color: #30343F;
+    color: #E0E0E0;
+    cursor:pointer;
+}
+.item-promo{
+    color: var(--Secondary-solid);
+
+}
+.itemInfo{
+align-self: center;}
+.glide__arrows {
+    display: flex;
+    justify-content: space-between;
+}
+.glide__arrow--left,
+.glide__arrow--right {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    border:1px solid transparent;
+    background: #FAFAFF;
+}
+
+
 .slider {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
     margin: var(--spacing-68) auto;
+    overflow: hidden;
+    position: relative;
 }
 
 .slider__title {
@@ -278,9 +330,6 @@ iconify-icon{
     font-size: var(--font-small);
     font-weight: 700;
 }
- .glide__arrow--left{
-right:0;
- }
  .glide__arrow--right{
     right:0;
      }
@@ -298,6 +347,7 @@ right:0;
     padding: var(--spacing-8)var(--spacing-12);
     position: absolute;
     right: 0;
+    padding:5px;
 }
 .card-item__cover img {
     animation: fade .7s;
@@ -381,7 +431,6 @@ margin-top: auto;
   .custom-titulo {
     font-size: 1.8em;
     font-weight: 700;
-    font-family: 'raleway', sans-serif;
     padding: var(--spacing-20) var(--spacing-28);
     margin-bottom: 5px; 
   }
@@ -389,7 +438,6 @@ margin-top: auto;
   .custom-subtitulo {
     font-size: 1.8em;
     font-weight: 500;
-    font-family: 'raleway', sans-serif;
     margin-bottom: 15px;
   }
   
@@ -397,7 +445,6 @@ margin-top: auto;
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'inter', sans-serif;
     color: rgba(185, 185, 185, 1);
     min-width: 150px; 
     white-space: nowrap;
@@ -412,8 +459,6 @@ margin-top: auto;
     display: inline-block;
     font-size: 24px;
     font-weight: 400;
-    font-family: 'inter', sans-serif;
-
     vertical-align:middle;
     vertical-align:bottom;
     width: 250px; 
@@ -424,7 +469,6 @@ margin-top: auto;
     color:  rgba(255, 255, 255, 1);
      background-color: red; 
      font-size: 12px;
-     font-family: 'inter', sans-serif;
      font-weight:400;
       border: none; padding: 10px; 
       cursor: pointer; 
@@ -439,7 +483,7 @@ margin-top: auto;
   .checkbox-container {
     display:inline;
      width: auto;
-       font-family: Inter; font-size: 18px; 
+ font-size: 18px; 
     font-weight: 400;
       text-align: right;
       white-space: nowrap;
@@ -451,8 +495,8 @@ margin-top: auto;
 
 
     /* shop */
+
 .shop-container {
-    font-family: 'Inter', sans-serif;
     color: rgba(48, 52, 63, 1);
     font-size: 24px;
     font-weight: 500;
@@ -461,7 +505,6 @@ margin-top: auto;
 
 
 .shop-container input[type="text"] {
-    font-family: 'Inter', sans-serif;
     color: rgba(185, 185, 185, 1);
     font-size: 20px;
     font-weight: 500;
@@ -472,7 +515,6 @@ margin-top: auto;
 
 
 .shop-container label {
-    font-family: 'Inter', sans-serif;
     color: var(--Dark-solid);
     font-size: 16px;;
     font-weight: 500;
@@ -488,7 +530,6 @@ margin-top: auto;
 #min::placeholder, #max::placeholder {
     width: 13px;
     height: 24px;
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -519,21 +560,18 @@ margin-top: auto;
 
       
     .shop-parrafo {
-        font-family: 'Inter', sans-serif; 
         font-size: 14px;
         font-weight: 500;
         line-height: 17px;
     }
     
     .shop-h4 {
-        font-family: 'Inter', sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
     }
     
     .shop-prix {
-        font-family: 'Inter', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
@@ -541,13 +579,10 @@ margin-top: auto;
     }
     
     .shop-cuotas {
-        font-family: 'Inter', sans-serif; 
         font-size: 12px;
         font-weight: 700;
         line-height: 15px;
-       
-        color: var(--Secondary-solid)
-        ;
+        color: var(--Secondary-solid);
     }
     
     .shop-products .product-wrapper {
@@ -562,6 +597,21 @@ margin-top: auto;
         display: flex;
         flex-direction: column;
 
+    }
+    .product-badge{
+        content:"";
+        width: 20%;
+    height: 1.2em;
+    background-color: rgba(255, 51, 51, 1);
+    color:var(--light-bg-solid) ;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    border-radius: 6px; 
+    text-align: center;
+    height: 30px;
+    float: right;
+    cursor: pointer; 
     }
     
     .pagination {
@@ -616,52 +666,8 @@ margin-top: auto;
 }
 
 
-/* ITEM */
-
-/* Primera sección */
-.primera-seccion {
-    width: 1191.84px;
-    height: 550px;
-}
-
-.primera-seccion article {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.primera-seccion .contenido {
-    width: 576.84px;
-    /* height: 320.73px; */
-    position: relative;
-}
-
-.primera-seccion .titulo1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    color: var(--Dark-solid)
-}
-
-.primera-seccion .titulo2 {
-    font: 700 38px/46px 'Inter', sans-serif;
-    color:var(--Dark-solid)
-}
-
-.primera-seccion .figura {
-    font: 400 24px/29px 'Inter', sans-serif;
-    color: var(--Dark-solid)
-}
-
-.primera-seccion .precio {
-    font: 400 38px/46px 'Inter', sans-serif;
-    color: var(--dark-bg-solid);
-}
 
 .pago {
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
@@ -670,92 +676,7 @@ margin-top: auto;
     
 }
 
-.cantidad-input {
-    color: rgba(116, 116, 116, 1);
-    border: 0.5px solid rgba(201, 201, 201, 1);
-    text-align: center;
-    vertical-align: top;
-    display: inline-block;
-    width: 105.47px;
-    height: 35.24px;
-    display: flex;
-    align-items: center;
-    }
-
-.cantidad-placeholder{
-height: 19.45px;
-color: rgba(116, 116, 116, 1);
-text-align: center;
-margin-top: 10px;
-
-}
-
-.boton-mas,
-.boton-menos {
-    width: 18px;
-    height: 18px;
-    background: rgba(79, 79, 79, 1);
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-    /*display: block;*/
-    margin-left:10px;
-    text-align: center;
-    margin: 0 5px;
-}
-
-.carro {
-    background: var(--primary-solid);
-    color: var(--light-bg-solid);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-medium);
-    font-weight: 400;
-    line-height: 22px;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 15px;
-    width: 181px;
-height: 37.91px;
-margin-top: 5px;
-
-
-}
-.carro-texto{
-    margin-top: 5px;
-}
-/* Segunda sección */
-.segunda-seccion {
-    width: 1218.25px;
-    height: 623px;
-    display: flex;
-}
-
-.article1,
-.article2,
-.article3 {
-    width: 358.57px;
-    height: 512px;
-    top: 941px;
-}
-
-
-.titulo1 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-small);
-    font-weight: 500;
-    line-height: 17px;
-    color: var(--Dark-solid);
-}
-
-.titulo2 {
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-medium);
-    font-weight: 700;
-    line-height: 22px;
-    color: var(--Dark-solid);
-}
-
 .precio {
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -763,46 +684,12 @@ margin-top: 5px;
 }
 
 .cuotas {
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
     color: rgba(29, 132, 181, 1);
 }
 
-.item-nuevo  {
-content:"";
-width: 20%;
-height: 1.2em;
-background-color: rgba(255, 51, 51, 1);
-color:var(--light-bg-solid) ;
-font-family: 'Inter', sans-serif;
-font-size: 14px;
-font-weight: 500;
-line-height: 30px;
-border-radius: 6px; 
-text-align: center;
-height: 30px;
-float: right;
-cursor: pointer; 
-
-}
-.product-badge{
-    content:"";
-    width: 20%;
-height: 1.2em;
-background-color: rgba(255, 51, 51, 1);
-color:var(--light-bg-solid) ;
-font-family: 'Inter', sans-serif;
-font-size: 14px;
-font-weight: 500;
-line-height: 30px;
-border-radius: 6px; 
-text-align: center;
-height: 30px;
-float: right;
-cursor: pointer; 
-}
 
 /*carrito*/
 .Total {
@@ -815,7 +702,6 @@ cursor: pointer;
         margin-bottom:50px;
     }
 .CarritoCompras{
-font-family: 'raleway', sans-serif;
 font-size: 46px;
 font-weight: 700;
 line-height: 54px;
@@ -829,7 +715,6 @@ margin-bottom: 50px;
     margin-right: 40px;
 }
 .compras-parrafo1 .compras-parrafo2 .compras-parrafo3{
-font-family: 'inter', sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 19px;
@@ -849,7 +734,6 @@ color:var(--Dark-solid);
     .compras-parrafo1,
     .compras-parrafo2,
      .compras-parrafo3{
-    font-family: 'inter', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -882,7 +766,6 @@ box-shadow: 0px 0px 10px 0px #00000040;
 }
 .component-titulo{
     display: inline;
-font-family: 'inter', sans-serif;
 font-size: 24px;
 font-weight: 700;
 line-height: 29px;
@@ -894,7 +777,6 @@ color: #111111;
 .component-figura{
     width: 81.52px;
 height: 17px;
-font-family: 'inter', sans-serif;
 font-size: 14px;
 font-weight: 500;
 line-height: 17px;
@@ -906,7 +788,6 @@ color: #30343F;
 .component-precio{
     width: 180.16px;
 height: 17px;
-font-family: 'inter', sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 17px;
@@ -920,7 +801,6 @@ margin-top: 10px;
 .CartPrecio{
     width: 99px;
 height: 24px;
-font-family: 'inter', sans-serif;
 font-size: 20px;
 font-weight: 400;
 line-height: 24px;
@@ -943,7 +823,6 @@ padding-top: 5px;
 .CartContador-text{
     width: 7.8px;
 height: 24px;
-font-family: 'inter', sans-serif;
 font-size: 20px;
 font-weight: 700;
 line-height: 24px;
@@ -1009,7 +888,6 @@ height: 25.67px;
 .resumen-titulo{
     width: 224px;
 height: 54px;
-font-family: Raleway;
 font-size: 46px;
 font-weight: 700;
 line-height: 54px;
@@ -1037,7 +915,6 @@ margin-right:40px;
     
 }
 .elementos-texto1, .elementos-texto2{
-    font-family: 'inter', sans-serif;
     height: 19px;
     font-size: 16px;
     line-height: 19px;
@@ -1062,7 +939,6 @@ height: Hug (19px);
   .subtotal-texto1, .subtotal-texto2{
     height: 19px;
     font-size: 16px;
-    font-family: 'inter', sans-serif;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
@@ -1085,7 +961,6 @@ height: Hug (19px);
     letter-spacing: 0em;
     text-align: left;
     height: 19px;
-    font-family: 'inter', sans-serif;
 font-size: 16px;
 }
  .envio-texto1{
@@ -1105,7 +980,6 @@ border-top: 2px solid #FF3333;
 .total-texto1{
     width: 66px;
     height: 24px;
-    font-family: 'inter', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -1117,7 +991,6 @@ border-top: 2px solid #FF3333;
 .total-texto2{
     width: 106px;
     height: 24px;
-    font-family: 'inter', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -1136,7 +1009,6 @@ margin-right: 40px;
  }
  .ResumenPago{
     height: 39px;
-    font-family: 'inter', sans-serif;
 font-size: 32px;
 font-weight: 700;
 line-height: 39px;
@@ -1182,7 +1054,6 @@ height: 844.45px;
 .titulos-productos{
     width: 818.77px;
 height: 29px;
-font-family: Inter;
 font-size: 24px;
 font-weight: 700;
 line-height: 29px;
@@ -1193,7 +1064,6 @@ text-align: right;
 tbody{
     width: 1086.27px;
 height: 61px;
-font-family: Inter;
 font-size: 24px;
 font-weight: 500;
 line-height: 61px;
@@ -1205,7 +1075,6 @@ color: #1F1F1F;
 thead tr{
     width: 1086.27px;
     height: 61px;
-    font-family: Inter;
 font-size: 24px;
 font-weight: 500;
 line-height: 61px;
@@ -1235,11 +1104,10 @@ border: 2px solid #30343F;
     width: 32px;
     height: 33px;
     padding: 3.78px 3.63px 4.13px 4px;
-  }
+  }listado
   .listado{
 height: 49px;
 display: contents;
-font-family: Raleway;
 font-size: 42px;
 font-weight: 700;
 line-height: 49px;
@@ -1273,9 +1141,7 @@ margin-left: 40px;
     text-align: center;
   }
   .login-titulo{
- /*   justify-content: space-around;*/
 height: 49px;
-font-family: Raleway;
 font-size: 42px;
 font-weight: 700;
 line-height: 49px;
@@ -1301,7 +1167,6 @@ height: 32px;
   .login--contraseña-texto{
     width: 148px;
 height: 29px;
-font-family: Inter;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1317,7 +1182,6 @@ border-radius: 3px;
 
   }
   .login--email-texto{
-font-family: Inter;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1342,7 +1206,6 @@ border: 2px;
   .placeholder-valor1{
     width: 173px;
 height: 19px;
-font-family: Inter;
 font-size: 16px;
 font-weight: 400;
 line-height: 19px;
@@ -1374,7 +1237,6 @@ border-radius: 3px;
   .login-ingresar{
     width: 103px;
     height: 39.06px;
-font-family: Inter;
 font-size: 12px;
 font-weight: 400;
 line-height: 15px;
@@ -1401,7 +1263,6 @@ background: #1F1F1F;
   .loginBoxTexto{
     width: 104px;
 height: 22px;
-font-family: Inter;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -1411,7 +1272,6 @@ color: #1F1F1F;
   }
   .loginBlue{
 display:flex;
-font-family: Inter;
 font-size: 14px;
 font-weight: 400;
 line-height: 17px;
@@ -1426,7 +1286,6 @@ color: #1D84B5;
   .recordarme span{
     width: 104px;
     height: 22px;
-    font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -1443,7 +1302,6 @@ color: #1D84B5;
   }
   /*edit*/
 .edit-titulo{
-    font-family: Raleway;
 font-size: 2em;
 font-weight: 700;
 line-height: 49px;
@@ -1471,7 +1329,6 @@ height: 44.28px;
 .categoria label{
     width: 125px;
     height: 29px;
-    font-family: Inter;
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
@@ -1482,7 +1339,6 @@ color:   var(--Dark-solid)
 .categoria select{
     width: 71px;
 height: 24px;
-font-family: Inter;
 font-size: 20px;
 font-weight: 500;
 line-height: 24px;
@@ -1500,7 +1356,6 @@ color: var(--Dark-solid);
 .licencia label{
     width: 107px;
     height: 29px;
-    font-family: Inter;
 font-size: 24px;
 font-weight: 300;
 line-height: 29px;
@@ -1513,7 +1368,6 @@ color:var(--Dark-300);
     width: 174px;
     height: 24px;
 text-align: left;
-font-family: Inter;
 font-size: 20px;
 font-weight: 500;
 line-height: 24px;
@@ -1522,7 +1376,6 @@ text-align: left;
 
 }
 .modificar-producto{
-    font-family: Inter;
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
@@ -1568,7 +1421,6 @@ display:flex;
 height: 29px;
 top: 348.71px;
 left: 109.92px;
-font-family: Inter;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1580,7 +1432,6 @@ color:  #000000;
 .nombre-producto{
     width: 296px;
 height: 22px;
-font-family: Inter;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -1596,7 +1447,6 @@ color: #1F1F1F;
 .sku label{
     width: 59px;
 height: 29px;
-font-family: Inter;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1607,9 +1457,7 @@ color: #000000;
 .sku-producto{
     width: 105px;
     height: 22px;
-   
-    font-family: Inter;
-font-size: 18px;
+   font-size: 18px;
 font-weight: 400;
 line-height: 22px;
 letter-spacing: 0.04em;
@@ -1628,9 +1476,7 @@ height: 29px;
 .precio label{
     width: 84px;
     height: 29px;
-  
-    font-family: Inter;
-    font-size: 24px;
+      font-size: 24px;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0.04em;
@@ -1642,9 +1488,7 @@ height: 29px;
    
     width: 95px;
     height: 22px;
-    
-    font-family: Inter;
-font-size: 18px;
+    font-size: 18px;
 font-weight: 400;
 line-height: 22px;
 letter-spacing: 0.04em;
@@ -1664,7 +1508,6 @@ height: 29px;
 .descuento label{
     width: 138px;
     height: 29px;
-    font-family: Inter;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -1676,7 +1519,6 @@ height: 29px;
 .descuento-producto{
     width: 36px;
 height: 22px;
-font-family: Inter;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -1696,9 +1538,7 @@ height: 44px;
 .cuotas label{
     width: 138px;
     height: 29px;
-  
-    font-family: Inter;
-font-size: 24px;
+  font-size: 24px;
 font-weight: 400;
 line-height: 29px;
 letter-spacing: 0.04em;
@@ -1723,7 +1563,6 @@ height: 44px;
 .stock label{
     width: 77px;
 height: 29px;
-font-family: Inter;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1735,7 +1574,6 @@ color: var(--Dark-solid);
 .stock-product{
     width: 22.16px;
     height: 22px;
-    font-family: Inter;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -1758,3 +1596,4 @@ border-bottom: 2px solid #FF3333
         opacity: 1;
     }
 }
+
