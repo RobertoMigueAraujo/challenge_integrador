@@ -29,8 +29,10 @@
             </ul>
         </nav>
     </header> <!--fin header-->
-   <h1>CREAR NUEVO ITEM</h1><br>
+    <div class="formulario-create">
+   <h1>CREAR NUEVO ITEM</h1>
    <form action="post" enctype="application/x-www-form-urlencoded">
+    <div class="categoriaCreate">
     <label for="categoria">Categoria:</label>
     <select name="seleccionar" id="categoria" >
         <option value="" disabled selected>Seleccionar</option>
@@ -39,29 +41,41 @@
     <label for="licencia">Licencia:</label>
     <select name="seleccionar" id="licencia">
         <option value="" disabled selected>Seleccionar</option>
-    </select><br>
+    </select>
+</div>
+<div class="productoCreate">
     <label for="NombreDelProducto">Nombre del producto:</label>
     <input type="NombreDelProducto" name="NombreDelProducto" id="NombreDelProducto" placeholder="Kakashi Hataki Shipudden Saga"><br>
-    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="30" rows="10"  placeholder="Descripcion del producto"></textarea><br>
+</div>
+<div class="descripcion">
+    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="50" rows="10"  placeholder="Descripcion del producto"></textarea><br>
+</div>
+<div class="textProducto">
     <label for="sku">SKU:</label>
     <input type="text" name="sku" id="sku" placeholder="SSK111AB001">
     <label for="precio">PRECIO:</label>
     <input type="text" name="precio" id="precio" placeholder="$ 0.000,00">
     <label for="stock">STOCK:</label>
-    <input type="text" name="stock" id="stock" placeholder="0"><br>
+    <input type="text" name="stock" id="stock" placeholder="0">
+</div>
+<div class="descuentoProducto">
     <label for="descuento">Descuento:</label>
     <input type="text" name="descuento" id="descuento" placeholder="0%">
     <label for="CUOTAS">Cuotas:</label>
     <select name="cuotas" id="cuotas">
-        <option value="3">3 cuotas sin interés</option>
+        <option value="3">3 cuotas sin interés
     </select>
-    </option><br>
+    </option>
+</div>
+<div class="imagenesCreate">
     <label for="Imagenes">Imagenes:</label>
 <input type="file" id="Imagenes" name="Imagenes" style="display: none;">
 <button onclick="document.getElementById('Imagenes').click();">Elegir Archivos</button>
 <p>No se ha seleccionado ningún archivo</p>
+</div>
 <button type="submit">Agregar producto</button>
     <button type="reset">Limpiar</button>
+</div>
 </form>
 
 

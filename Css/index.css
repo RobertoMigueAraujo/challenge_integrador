@@ -1026,7 +1026,13 @@ padding-top: 10px;
 
 
 /*admin*/
-
+button {
+  background: white;
+    border: 1px solid transparent;
+}
+.boton-plus {
+   fill: #FF3333;
+}
 .titulos-productos{
     width: 818.77px;
 height: 29px;
@@ -1052,21 +1058,12 @@ input#search-input {
     padding: 10px;
 }
 
- table tbody tr td a button img {
-    width: 32px;
-    height: 33px;
-    padding: 3.78px 3.63px 4.13px 4px;}
   .agregar{
     display: flex;
-    float: right;
-    width: 198px;
-height: 52px;
-margin-right: 60px;
+margin-right: 10px;
   }
   
 .search-form{
-    width: 590.88px;
-height: 44.28px;
 border-radius: 6px;
 border: 2px solid #30343F;
 display: flex;
@@ -1075,7 +1072,7 @@ margin-left: 40px;
   table {
     border-collapse: separate;
     text-indent: initial;
-    border-spacing: 10px;
+    border-spacing: 20px;
 
 }
   td {
@@ -1492,9 +1489,55 @@ border-left: 0px;
 border-right: 0px;
 border-bottom: 2px solid #FF3333
 }
+/*create*/
+.formulario-create {
+    margin-left: 10%;
+    padding:30px;
+  flex-direction:column;
+  display: flex;
+  padding: var(--spacing-24);
+}
+label {
+    font-weight: 600;
+    font-size: large;
+}
+.categoriaCreate{
+ 
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+select#categoria {
+    font-size: 400;
 
+}
+.productoCreate  {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.descripcion {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.textProducto {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.descuentoProducto {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+input#stock {
 
-  
+    width: 50px;
+}
+imagenesCreate {
+    display: inline-flex;
+}
 /*animation va al final del codigo*/ 
 @keyframes fade {
     0% {
