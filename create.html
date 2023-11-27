@@ -28,7 +28,9 @@
                 </li>
             </ul>
         </nav>
-    </header> <!--fin header-->
+    </header>
+     <!--fin header-->
+    <main>
     <div class="formulario-create">
    <h1>CREAR NUEVO ITEM</h1>
    <form action="post" enctype="application/x-www-form-urlencoded">
@@ -48,7 +50,7 @@
     <input type="NombreDelProducto" name="NombreDelProducto" id="NombreDelProducto" placeholder="Kakashi Hataki Shipudden Saga"><br>
 </div>
 <div class="descripcion">
-    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="50" rows="10"  placeholder="Descripcion del producto"></textarea><br>
+    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="60" rows="10"  placeholder="Descripcion del producto"></textarea><br>
 </div>
 <div class="textProducto">
     <label for="sku">SKU:</label>
@@ -69,19 +71,14 @@
 </div>
 <div class="imagenesCreate">
     <label for="Imagenes">Imagenes:</label>
-<input type="file" id="Imagenes" name="Imagenes" style="display: none;">
-<button onclick="document.getElementById('Imagenes').click();">Elegir Archivos</button>
-<p>No se ha seleccionado ningún archivo</p>
+<input type="file" id="Imagenes" name="Imagenes">
 </div>
-<button type="submit">Agregar producto</button>
-    <button type="reset">Limpiar</button>
+<div class="botonEliagre">
+    <button id="aceptarBoton" type="submit">Aceptar</button>
+    <button id="resetearBoton" type="reset">Limpiar</button>
 </div>
 </form>
-
-
-
- 
-
+</main>
 
 <!--aca empieza el footer-->
 
@@ -100,7 +97,8 @@
     
     <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<script src="Css/js/create.js"></script>
 
-   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>

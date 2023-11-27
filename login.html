@@ -30,14 +30,15 @@
         </nav>
     </header>
 
-     <main>
-        <div class="login-titulo">INGRESAR A MI CUENTA</div>
+     <main class="container">
+        <div class="loginFormulario">
+        <h1>INGRESAR A MI CUENTA</h1>
         <div class="login-container">
         <div class="login--principal">
         <form action="" method="post" enctype="application/x-www-form-urlencoded">
 
             <div>
-                <div>
+                <div class="loginEmail">
             <label class="login--email-texto" for="email">Email:</label>
             <input class="placeholder-valor1"  type="email" name="Algo" id="email" required placeholder="johndoe@correo.com"> 
         
@@ -54,15 +55,17 @@
              <button class="login-ingresar" type="submit">Ingresar</button>
             
             <div class="login-box">
-              <input class="loginBox" type="checkbox">
-             <span class="Recordarme">Recordarme</span> 
-          <div class="enlace">
-             <a  class="loginBlue" href="">Olvidé mi contraseña</a></div>
+              <input  type="checkbox">
+             <p class="loginText"> Recordarme </p> 
             </div>
-             
+        </div>
+          <div class="enlaceLogin">
+             <p >Olvidé mi contraseña</p>
+            </div>
             
         </form>
-    </div>
+    
+</div>
 </div>
      </main>
 

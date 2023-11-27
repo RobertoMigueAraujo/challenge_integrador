@@ -86,11 +86,10 @@ img{
 }
 
 
+.container {
+    padding: var(--spacing-36);
+    margin: auto; /* Centra el contenedor */
 
-.container{
-
-    max-width: 1200px;
-    margin: 0 auto;
 }
     .with-icon{
         display: flex;
@@ -420,82 +419,35 @@ iconify-icon{
     flex-grow: 1; 
 margin-top: auto;   
 }
-/*register*/
-.main-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 20px;
-  
-  }
-  
-  .custom-titulo {
-    font-size: 1.8em;
-    font-weight: 700;
-    padding: var(--spacing-20) var(--spacing-28);
-    margin-bottom: 5px; 
-  }
-  
-  .custom-subtitulo {
-    font-size: 1.8em;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  
-  .custom-input {
+/*register*/    
+
+.custom-label {
     display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(185, 185, 185, 1);
-    min-width: 150px; 
-    white-space: nowrap;
-    justify-content: left;
-    border:none; border-bottom:  2px solid red; 
-    margin-top: 15px;
-    vertical-align:middle;
-    vertical-align:bottom;
-    
-  }
-  .custom-label {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 400;
-    vertical-align:middle;
-    vertical-align:bottom;
-    width: 250px; 
-    white-space: nowrap;
-  }
-  .custom-button{
-    display: inline-block;
-    color:  rgba(255, 255, 255, 1);
-     background-color: red; 
-     font-size: 12px;
-     font-weight:400;
-      border: none; padding: 10px; 
-      cursor: pointer; 
-      width:103px;
-      padding-bottom: 10px;
-      text-align:center;
-    margin-right: 10px;
-    margin-top: 20px;
-   
-  }
+}
+.form-field {
+    padding: var(--spacing-24);
+}
+button.custom-button {
+    background-color: var(--primary-solid);
+    color:var(--light-font-solid);
+}
+p.textoRegister {
+    padding:var(--spacing-20)
+}
+.contenidoRegister {
+    padding: var(--spacing-24);
+}
+.contenidoRegister input.nombre, .contenidoRegister input.apellidoRegister, .contenidoRegister input.emailRegister, .contenidoRegister input.contraseñaRegister, .contenidoRegister input.repeatRegister {
+   border: 2px solid transparent;
+    border-bottom-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+}
 
-  .checkbox-container {
-    display:inline;
-     width: auto;
- font-size: 18px; 
-    font-weight: 400;
-      text-align: right;
-      white-space: nowrap;
-     margin-top:10px;
-     }
-     .Terminos 
-     {  color: var(--Secondary-solid)}
-
-
-
-    /* shop */
+/* Estilos para las etiquetas de los campos de entrada */
+.contenidoRegister label {
+  display: inline-block;
+}
+  /* shop */
 
 .shop-container {
     color: rgba(48, 52, 63, 1);
@@ -1029,17 +981,7 @@ padding-top: 10px;
 button {
   background: white;
     border: 1px solid transparent;
-}
-.boton-plus {
-   fill: #FF3333;
-}
-.titulos-productos{
-    width: 818.77px;
-height: 29px;
-font-size: 24px;
-font-weight: 700;
-line-height: 29px;
-text-align: right;
+    cursor: pointer;
 
 }
 
@@ -1055,24 +997,18 @@ h1.listado {
 input#search-input {
     border-radius: 6px;
     width: 40%;
-    padding: 10px;
-}
-
-  .agregar{
-    display: flex;
-margin-right: 10px;
-  }
-  
+    padding: inherit;
+}  
 .search-form{
 border-radius: 6px;
 border: 2px solid #30343F;
 display: flex;
-margin-left: 40px;
+margin-left: var(--spacing-20);
 }
   table {
     border-collapse: separate;
     text-indent: initial;
-    border-spacing: 20px;
+    border-spacing: var(--spacing-20);
 
 }
   td {
@@ -1096,400 +1032,117 @@ img.lupa-productos {
     overflow: clip;
     display:inline-flex;
 }
+/*login*/
 
-  .login-titulo{
-height: 49px;
-font-size: 42px;
-font-weight: 700;
-line-height: 49px;
-text-align:center;
-color: #1F1F1F;
-
-  }
- 
-  .login--contraseña-texto{
-    width: 148px;
-height: 29px;
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-text-align: right;
-color: #000000;
-
-  }
-  .login--datos{
-    width: 515px;
-height: 289.13px;
-border-radius: 3px;
-
-  }
-  .login--email-texto{
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-text-align: right;
-color: #000000;
-
-  }
-  .login--placeholder{
-    width: 208.6px;
-height: 25.18px;
-width: 208.6px;
-
-  }
-
-.login--placeholder2{
-border: 2px;
-}
-  .placeholder-valor1{
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-text-align: right;
-color: #B9B9B9;
-border-top: 0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333;
-
-  }
-  .placeholder-valor2{
-   color: #E0E0E0;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   border-bottom: 2px solid #FF3333;
-  }
-  .login-bottom{
-    display: inline-flex;
-    width: 273.48px;
-height: 78.35px;
-border-radius: 3px;
-  }
-  .login-ingresar{
-font-size: 12px;
-font-weight: 400;
-line-height: 15px;
-text-align: left;
-background: #FF3333;
-color: var(--light-bg-solid);
-
-  }
-  .login-box{
-    width: 129.25px;
-height: 22px;
-
-border-radius: 3px;
-
-  }
-  .loginBox{
-height: 16.27px;
-border-radius: 3px;
-border: 2px;
-background: #1F1F1F;
-
-  }
-  .loginBoxTexto{
-    width: 104px;
-height: 22px;
-font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-text-align: left;
-color: #1F1F1F;
-  }
-  .loginBlue{
-display:flex;
-font-size: 14px;
-font-weight: 400;
-line-height: 17px;
-text-align: left;
-color: #1D84B5;
-
-  }
-
-  .recordarme span{
-    width: 104px;
-    height: 22px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    color: #1F1F1F;
-
-    
-  }
-  .login-container {
-    display: block;
-    width: 50%; 
-    margin: 0 auto; 
-  }
-  /*edit*/
-.edit-titulo{
-font-size: 2em;
-font-weight: 700;
-line-height: 49px;
-text-align: left;
-color: var(--Dark-solid)
-
-}
-.imagenes{
+.loginFormulario {
     display: flex;
-    width: 300px;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-28);
 }
-.imagen-izquierda .imagen-derecha{
-   border-top: 0px;
-   border-right: 0px;
-    border-left: 0px;
-    border-bottom: 1px solid #FF3333;
+input#email {
+    border: none;
+    background-color: 2px var(--primary-solid);
 }
-.categoria-edit{
-    width: 387.29px;
-height: 44.28px;
-
-
+input#Contraseña {
+    border: none;
+    background-color: 2px var(--primary-solid);
 }
-.categoria label{
-    width: 125px;
-    height: 29px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    text-align: right;
-color:   var(--Dark-solid) 
-}
-.categoria select{
-    width: 71px;
-height: 24px;
-font-size: 20px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-color: var(--Dark-solid);
-
-}
-.licencia-edit{
-    width: 387.09px;
-    height: 44.28px;
-  
-    
-}
-.licencia label{
-    width: 107px;
-    height: 29px;
-font-size: 24px;
-font-weight: 300;
-line-height: 29px;
-text-align: left;
-color:var(--Dark-300);
-
-}
-.licencia select{
-    width: 174px;
-    height: 24px;
-text-align: left;
-font-size: 20px;
-font-weight: 500;
-line-height: 24px;
-text-align: left;
-
-}
-.modificar-producto{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    text-align: left;
-   color: #FFFFFF;
-    background: #FF3333;
+.enlaceLogin {
+    color: var(--Secondary-solid);
     cursor: pointer;
-border: none;
-width: 175px;
-height: 44.33px;
-
-}
-.categoria-edit{
-    width: 387.29px;
-height: 44.28px;
-
-}
-.licencia-edit{
-    width: 387.09px;
-height: 44.28px;
-
-
+    padding: var(--spacing-20);
 }
 
-.login-productos{
-    width: 662.4px;
-height: 29px;
-display:flex;
-border-top:0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333;
+.login-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.edit-descuento{
-    width: 680.81px;
-height: 44px;
-
-display:flex;
+.login-contraseña {
+    padding: var(--spacing-20);
 }
-.edit-productos label{
-    width: 267px;
-height: 29px;
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-text-align: right;
-color:  #000000;
-
+button.login-ingresar {
+    padding: var(--spacing-20);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    margin-right: 20px;
+    cursor: pointer;
 }
-.nombre-producto{
-    width: 296px;
-height: 22px;
-font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-text-align: right;
-color: #1F1F1F;
-
+.login-box {
+    display: flex;
 }
-.sku{
-    width: 198.16px;
-    height: 29px;
+p.loginText {
+    margin-left: 10px;
 }
-.sku label{
-    width: 59px;
-height: 29px;
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-text-align: right;
-color: #000000;
+.loginEmail {
+    padding:var(--spacing-20)
 }
-.sku-producto{
-    width: 105px;
-    height: 22px;
-   font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-text-align: right;
-color: #111111;
-border-top:0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333
-}
-.precio{
-    width: 227.96px;
-height: 29px;
+.login-contraseña {
+    padding: var(--spacing-20)
 }
 
-.precio label{
-    width: 84px;
-    height: 29px;
-      font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-    text-align: right;
-   color: #000000;
-
-}
-.precio-producto{
-   
-    width: 95px;
-    height: 22px;
-    font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-text-align: right;
-color: #1F1F1F;
-border-top:0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333
 
 
+  /*edit*/
+  .categoriaLicencia {
+    padding: var(--spacing-16);
 }
-.descuento{
-    width: 318.27px;
-height: 29px;
+h1.edit-titulo {
+    padding: var(--spacing-20);
+    text-align: center;
 }
-.descuento label{
-    width: 138px;
-    height: 29px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-    text-align: right;
-    color: #000000;
-
+.edit-productos {
+    padding: var(--spacing-20);
+    margin: 2%;
 }
-.descuento-producto{
-    width: 36px;
-height: 22px;
-font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-text-align: right;
-color: #1F1F1F;
-border-top:0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333;
-
+.descripcionEdit {
+    padding: var(--spacing-16);
 }
-.cuota{
-    width: 680.81px;
-height: 44px;
+.descuentosEdit {
+    display: flex;
+    padding: var(--spacing-20);
 }
-.cuotas label{
-    width: 138px;
-    height: 29px;
-  font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-text-align: right;
-color: #000000;
-
+.descuentoEdit {
+    display: table-column-group;
 }
-.cuotas-producto{
-    width: 55px;
-height: 27.36px;
-border-top:0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333
+.imagenesEdit {
+    display: flex;
+    width: 50%;
+    padding: var(--spacing-20);
 }
-.cuotas-producto select{
-    width: 346px;
-height: 44px;
-
-
+.imagenesEdit img {
+    border-bottom: 2px solid var(--primary-solid);
+    margin-bottom: 10px;
 }
-.stock label{
-    width: 77px;
-height: 29px;
-font-size: 24px;
-font-weight: 400;
-line-height: 29px;
-text-align: right;
-color: var(--Dark-solid);
-
+.imagen-izquierda p,
+.imagen-derecha p {
+    text-align: center;
 }
-.stock-product{
-    width: 22.16px;
-    height: 22px;
-font-size: 18px;
-font-weight: 400;
-line-height: 22px;
-text-align: right;
-border-top:0px;
-border-left: 0px;
-border-right: 0px;
-border-bottom: 2px solid #FF3333
+.imagen-izquierda {
+    margin-right: 10px;
+}
+.ModificarProductoEdit {
+    padding: var(--spacing-20);
+  
+}
+input.modificarProducto {
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    border: none;
+    cursor: pointer;
+}
+form#figura-form {
+    margin-left: 50px;
+    flex-direction: column;
 }
 /*create*/
+input#nombre {
+ width: 50%;
+    border-bottom: var(--primary-solid);
+    border: 1px solid transparent;
+
+}
 .formulario-create {
     margin-left: 10%;
     padding:30px;
@@ -1500,6 +1153,7 @@ border-bottom: 2px solid #FF3333
 label {
     font-weight: 600;
     font-size: large;
+    margin-right: 20px;
 }
 .categoriaCreate{
  
@@ -1509,6 +1163,7 @@ label {
 }
 select#categoria {
     font-size: 400;
+    margin-right: 20px;
 
 }
 .productoCreate  {
@@ -1532,11 +1187,77 @@ select#categoria {
     margin-top: 20px;
 }
 input#stock {
-
     width: 50px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: 2px solid var(--primary-solid);
 }
-imagenesCreate {
+.imagenesCreate {
     display: inline-flex;
+}
+.imagenesCreate {
+    display: flex;
+}
+input#NombreDelProducto {
+    width: 200px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid var(--primary-solid);
+}
+select#categoria {
+    margin-right: 20px;
+}
+input#sku {
+    width: 90px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid var(--primary-solid);
+    margin-right: 20px;
+}
+input#precio {
+    width: 90px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid var(--primary-solid);
+    margin-right: 20px;
+}
+input#descuento {
+    margin-right: 20px;
+    width: 40px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid var(--primary-solid);
+    text-align: center;
+}
+button#aceptarBoton {
+     background: var(--primary-solid);
+    color: var(--light-font-solid);
+    margin-right: 20px;
+    cursor: pointer;
+}
+button#resetearBoton {
+    background: var(--primary-solid);
+    color: var(--light-font-solid);
+  cursor: pointer;
+}
+.botonEliagre {
+    padding: var(--spacing-28);
+}
+.listadoAdmin {
+    align-items: center;
+    justify-content: space-around;
+    display: -webkit-box;
+    margin-inline: 3%;
+    margin-inline-end: 40%;
+}
+.agregarAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form#search-form {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+h1.tituloAdmin {
+    margin-right: 50%;
 }
 /*animation va al final del codigo*/ 
 @keyframes fade {
