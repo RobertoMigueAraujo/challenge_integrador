@@ -439,7 +439,7 @@ p.textoRegister {
 }
 .contenidoRegister input.nombre, .contenidoRegister input.apellidoRegister, .contenidoRegister input.emailRegister, .contenidoRegister input.contraseñaRegister, .contenidoRegister input.repeatRegister {
    border: 2px solid transparent;
-    border-bottom-color: var(--primary-solid);
+    border-bottom: var(--primary-solid);
     color: var(--light-bg-solid);
 }
 
@@ -662,7 +662,7 @@ color:var(--Dark-solid);
 margin-bottom: 50px;
 }
 .resumen-titulo .CarritoCompras span{
-    border-bottom: 5px solid #FF3333;
+    border-bottom: 5px solid var(--primary-solid);
     margin-right: 40px;
 }
 .compras-parrafo1 .compras-parrafo2 .compras-parrafo3{
@@ -1041,12 +1041,12 @@ img.lupa-productos {
     padding: var(--spacing-28);
 }
 input#email {
-    border: none;
-    background-color: 2px var(--primary-solid);
+    border:2px solid transparent;
+    border-bottom: 2px var(--primary-solid);
 }
 input#Contraseña {
-    border: none;
-    background-color: 2px var(--primary-solid);
+    border:2px solid transparent;
+    border-bottom: 2px var(--primary-solid);
 }
 .enlaceLogin {
     color: var(--Secondary-solid);
@@ -1127,9 +1127,9 @@ h1.edit-titulo {
   
 }
 input.modificarProducto {
-    background-color: var(--primary-solid);
+    border-bottom: var(--primary-solid);
     color: var(--light-bg-solid);
-    border: none;
+    border:2px solid transparent;
     cursor: pointer;
 }
 form#figura-form {
@@ -1199,9 +1199,9 @@ input#stock {
     display: flex;
 }
 input#NombreDelProducto {
-    width: 200px;
     border: 1px solid transparent;
     border-bottom: 2px solid var(--primary-solid);
+
 }
 select#categoria {
     margin-right: 20px;
