@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/index.css">
-    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
-
     <title>ITEM</title>
     
 </head>
@@ -20,7 +18,7 @@
             <ul class="navbar__menu">
                 <li class="navbar__item width-submenu">
                    
-             <a class="navbar__link width-icon" href="/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+             <a class="navbar__link width-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                     <ul class="submenu">
 
                     <li class="submenu-item">
@@ -35,13 +33,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="navbar__link" href="/contacto.html">CONTACTO</a>
+                    <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
                 </li class="navbar__item">
                 <li>
-                    <a class="navbar__link" href="/login.html">LOGIN</a>
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li class="navbar__item>
                 <li class="navbar__item">
-                    <a class="navbar__cart"  href="/carrito.html">
+                    <a class="navbar__cart"  href="./pages/cart.html">
                         <img src="./img/icons/cart-icon.svg" alt="icono de carrito"> 
                     </a>
                 </l>
@@ -51,27 +49,25 @@
     </header> 
 
         <main>
-            <article class="item--info">
-                <div class="item--img card-item__cover">
+        <picture class="item--img card-item__cover">
                     <img class="card-item__img--front" src="/img/star-wars/baby-yoda-1.webp" alt="Figura Baby Yoda">
                     <img class="card-item__img--back" src="/img/star-wars/baby-yoda-box.webp" alt="Figura Baby Yoda">
-                </div>
-               <div class="itemInfo">
-                <p>STAR WARS</p>
-                <h2>BABY YODA BLUEBALL</h2>
-                <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, Edición limitada</p>
-                <p>$1799,99</p>
-                <div class="item-cart">
-                    <button id="substract" class="item--quantity" type="button">-</button>
-                    <input class="item--input" type="text" name="quantity" id="quantity" placeholder="0">
-                    <button id="add" class="item--quantity" type="button">+</button>
-                    <button class="item--submit btn btn--primary btn--medium" type="submit">Agregar al Carrito</button>
-                </div>
-                <p class="item-promo"><a href="">Ver métodos de pago</a>- 3 CUOTAS SIN INTERÉS</p>
-                <div>
-            </article>
-            
-            
+                </picture>
+                    <article class="item--info">
+                        <p class="item--license">STAR WARS</p>
+                        <h3 class="item--name">BABY YODA BLUEBALL</h3>
+                        <p class="item--description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, Edición limitada</p>
+                        <p class="precio">$1799,99</p>
+                        
+                            <div class="item-cart">
+                             <button id="substract" class="item--quantity" type="button">-</button>
+                              <input class="item--input" type="text" name="quantity" id="quantity" placeholder="0">
+                              <button id="add" class="item--quantity" type="button">+</button>
+                              <button class="item--submit btn btn--primary btn--medium"  type="submit">Agregar al Carrito</button>
+                             </div>
+                             <p class="item-promo"><a href="">Ver métodos de pago</a>- 3 CUOTAS SIN INTERÉS</p>    
+                </article>
+            </section>
             <section class="slider container glide" >
                 <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
                 <div class="glide--track" data-glide-el="track">
@@ -140,9 +136,9 @@
     <footer class="footer">
         <nav class="nabar container">
             <ul class="navbar__item">
-                <li class="navbar__item"><a class="navbar__link" href="/shop.html">SHOP</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="/register.html">REGISTRARSE</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="/login.html">LOGIN</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop.html">SHOP</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/registrarse.html">REGISTRARSE</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="./pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
