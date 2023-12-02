@@ -1,39 +1,29 @@
 const express = require('express');
 const router = express.Router();
 
-
-router.get('/login', (req, res) => {
-  res.send('Página de inicio de sesión');
+// Ruta para la página de inicio de sesión
+router.get('/auth/login', (req, res) => {
+    res.send('Esta es la página de inicio de sesión');
 });
 
-
-router.post('/login', (req, res) => {
-  res.send('Iniciar sesión');
+// Ruta para iniciar sesión
+router.post('/auth/login', (req, res) => {
+    res.send('Inicio de sesión exitoso');
 });
 
-
-router.get('/register', (req, res) => {
-  res.send('Página de registro');
+// Ruta para la página de registro
+router.get('/auth/register', (req, res) => {
+    res.send('Esta es la página de registro');
 });
 
-
-router.post('/register', (req, res) => {
-  res.send('Registrar usuario');
+// Ruta para registrar un nuevo usuario
+router.post('/auth/register', (req, res) => {
+    res.send('Registro exitoso');
 });
 
-
-router.get('/logout', (req, res) => {
-  res.send('Cerrar sesión');
+// Ruta para cerrar sesión
+router.get('/auth/logout', (req, res) => {
+    res.send('Has cerrado sesión con éxito');
 });
-
-module.exports = router;
-// auth.js
-const authController = require('../controllers/authController');
-
-router.get('/login', authController.getLoginPage);
-router.post('/login', authController.postLogin);
-router.get('/register', authController.getRegisterPage);
-router.post('/register', authController.postRegister);
-router.get('/logout', authController.getLogout);
 
 module.exports = router;

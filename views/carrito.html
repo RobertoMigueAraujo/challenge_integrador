@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" href="/public/Css/index.css">
     <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
     
     <title>CARRITO</title>
@@ -14,7 +14,7 @@
         <nav class="navbar">
                 <picture class="navbar__logo">
                     <a href="./index.html">
-                        <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                        <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
                     </a>
                 </picture>
             <ul class="navbar__menu">
@@ -42,7 +42,7 @@
                 </li class="navbar__item>
                 <li class="navbar__item">
                     <a class="navbar__cart"  href="./cart.html">
-                        <img src="/img/icons/cart-icon.svg" alt="icono de carrito"> 
+                        <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito"> 
                     </a>
                 </li>
 
@@ -51,112 +51,96 @@
     </header> <!--fin header-->
 
     <main class="container">
-            <h1>CARRITO DE COMPRAS</h1>
+            <span class="tituloCarrito">CARRITO DE COMPRAS</span>
+            <div class="carritoContainer">
 
-          <div class="carritoContainer">
-
-            <div class="encabezados-carrito">
-            <h2 class="headerCarrito1"> DETALLE DE PRODUCTO </h2>
-              <h2 class="headerCarrito2">CANTIDAD</h2>
-              <h2 class="headerCarrito3">TOTAL</h2>
+                <div class="encabezados-carrito">
+                    <h2 class="headerCarrito1"> DETALLE DE PRODUCTO </h2>
+                    <h2 class="headerCarrito2">CANTIDAD</h2>
+                    <h2 class="headerCarrito3">TOTAL</h2>
+                    <h2 class="headerCarrito3">ELIMINAR</h2>
+                   
+                </div>
+            
+                <div class="carritoitem1">
+                    <div class="comprasitem1">
+                        <img src="/public/img/star-wars/baby-yoda-1.webp" alt="Figura Baby Yoda" class="carritoImg1">  
+                        <h3>BABY YODA BLUEBALL</h3>
+                        <h3>STAR WARS</h3>    
+                        <h3>precio: $ 1799,99</h3>   
+                    </div>
+                    <div class="cantidadCarrito1">
+                        <h3>2</h3>
+                        <div class="contadorCarrito1">
+                            <h3>+</h3>
+                            <h3>-</h3>
+                        </div>
+                    </div>
+                    <div class="precioCarrito1">
+                        <h3>$ 3599,98</h3>
+                    </div>
+                    <div>
+                        <button><img src="/public/img/icons/eliminar.svg" alt="boton eliminar" class="iconoCarrito1"></button>
+                    </div>
+                </div>
+                <div class="carritoitem2">
+                    <div class="comprasitem2">
+                        <img src="/public/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto" class="carritoImg2">  
+                       
+                            
+                    <h3>PIDGEOTTO</h3>
+                    <h3>POKEMON</h3>    
+                    <h3>Precio unitario: $ 1799,99</h3>   
+                          
+                        </div>
+                <div class="cantidadCarrito2">
+                       <h3>1</h3>
+                      
+                        <div class="contadorCarrito2">
+                        <h3>+</h3>
+                    <h3>-</h3>
+                </div>
+                
             </div>
-
-          <div class="carritoitem1">
-            <div class="comprasitem1">
-     <img src="/img/star-wars/baby-yoda-1.webp" alt="Figura Baby Yoda" class="carritoImg1">  
-    
-
-<h3>BABY YODA BLUEBALL</h3>
-<h3>STAR WARS</h3>    
-<h3>precio: $ 1799,99</h3>   
-</div>
- 
-       <div class="cantidadCarrito1">
-     <h3>2</h3>
-    </div>
-    <div>
-        <div class="contadorCarrito1">
-    <h3>+</h3>
-    <h3>-</h3>
-</div>
-</div>
-<div class="precioCarrito1">
-<h3>$ 3599,98</h3>
-</div>
-    <div>
-        <a><button><img src="/img/icons/eliminar.svg" alt="boton eliminar" class="iconoCarrito1">
-        
-    </div>
-</div>
+                
+                <div class="precioCarrito2">
+                    <h3>$ 1799,99</h3>
+                </div>
+                            <a><button><img src="/public/img/icons/eliminar.svg" alt="boton eliminar" class="iconoCarrito2">
+                            
+                
+                        </div>
+            </div>
+            
 
 
-<div class="carritoitem2">
-    <div class="comprasitem2">
-        <img src="/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto" class="carritoImg2">  
+            <span class="resumen-titulo">
+                RESUMEN</span>
        
             
-    <h3>PIDGEOTTO</h3>
-    <h3>POKEMON</h3>    
-    <h3>Precio unitario: $ 1799,99</h3>   
-          
-        </div>
-<div class="cantidadCarrito2">
-       <h3>1</h3></div>
-       <div>
-        <div class="contadorCarrito2">
-        <h3>+</h3>
-    <h3>-</h3>
-</div>
-</div>
-
-
-<div class="precioCarrito2">
-    <h3>$ 1799,99</h3>
-</div>
-            <a><button><img src="/img/icons/eliminar.svg" alt="boton eliminar" class="iconoCarrito2">
+            <table class="Total">
+                <tr class="resumen-elementos">
+                    <td class="elementos-texto1">CANTIDAD DE ELEMENTOS</td>
+                    <td class="elementos-texto2">3</td>
+                </tr>
+                <tr class="resumen-subtotal">
+                    <td class="subtotal-texto1">SUBTOTAL</td>
+                    <td class="subtotal-texto2">$ 5.399,97</td>
+                </tr>
+                <tr class="resumen-envio">
+                    <td class="envio-texto1">ENVIO</td>
+                    <td class="envio-texto2">$ 0,00</td>
+                </tr>
+                <tr class="resumen-total">
+                    <td class="total-texto1">TOTAL</td>
+                    <td class="total-texto2">$ 5.399,97</td>
+                </tr>
+            </table>
             
+            <div class="resumen-pago">
+                <div class="ResumenPago">IR A PAGAR</div>
             </div>
-
-
-        </div>
-        
-
-<div class="resumen-titulo">
-
-    <span>RESUMEN</span>
-</div>
-
-<div class="Total">
-    <div class="resumen">
-
-        <div class="resumen-elementos">
-        <div class="elementos-texto1">CANTIDAD DE ELEMENTOS </div>
-        <div class="elementos-texto2">3</div>
-        </div>
-
-        <div class="resumen-subtotal">
-            <div class="subtotal-texto1">SUBTOTAL</div>
-            <div class="subtotal-texto2">$ 5.399,97</div>
-        </div>
-       
-        
-        <div class="resumen-envio">
-            <div class="envio-texto1">ENVIO</div>
-            <div class="envio-texto2">$ 0,00</div>
-        </div>
-
-        <div class="resumen-total">
-            <div class="total-texto1">TOTAL</div>
-        <div class="total-texto2">$ 5.399,97</div>
-        </div>
-
-    </div>
-    <div class="resumen-pago">
-        <div class="ResumenPago">IR A PAGAR</div>
-    </div>
-
-</div>
-</div>
+            
     </main>
     <!--aca empieza el footer-->
     <footer class="footer">
@@ -169,7 +153,7 @@
             </ul>
         </nav>
         <picture class="picture">
-            <img src="/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+            <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
         </picture>
         
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>

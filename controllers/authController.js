@@ -1,29 +1,12 @@
-// authController.js
-const getLoginPage = (req, res) => {
-    res.send('Página de inicio de sesión');
-  };
-  
-  const postLogin = (req, res) => {
-    res.send('Realizar inicio de sesión');
-  };
-  
-  const getRegisterPage = (req, res) => {
-    res.send('Página de registro');
-  };
-  
-  const postRegister = (req, res) => {
-    res.send('Realizar registro');
-  };
-  
-  const getLogout = (req, res) => {
-    res.send('Cerrar sesión');
-  };
-  
-  module.exports = {
-    getLoginPage,
-    postLogin,
-    getRegisterPage,
-    postRegister,
-    getLogout,
-  };
-  
+const express = require('express');
+const router = express.Router();
+
+// Controlador para la página principal de la tienda
+const authController = (req, res) => {
+    res.send('Esta ruta devuelve la vista de productos.');
+};
+
+// Ruta para la página principal de la tienda
+router.get('/auth', authController);
+
+module.exports = router;

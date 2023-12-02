@@ -652,51 +652,59 @@ p.textoRegister {
 
 
 /*carrito*/
-.carritoContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-
-}
-img.iconoCarrito1 {
-    grid-column: 4;
-    grid-row: 1;
-}
-img.iconoCarrito2 {
-    grid-column: 4;
-    grid-row: 2;
-}
-.cantidadCarrito1 {
-    grid-column: 2;
-    grid-row: 1;
-}
-.cantidadCarrito2 {
-    grid-column: 2;
-    grid-row: 1;
-}
-.carritoImg1, .carritoImg2{
-    width: 200px;
-}
-.precioCarrito1 {
-    grid-column: 3;
-    grid-row: 1;
-}
-.precioCarrito2 {
-    grid-column: 3;
-    grid-row: 12;
-}
-.encabezados-carrito {
-    grid-column: 1 / span 4;
-    background-color: lightblue;
-    padding: 10px;
-    text-align: center;
-    display:flex;
-
-}
-.carritoitem1, .carritoitem2 {
-    grid-column: 1 / span 4;
-    display:flex;
-}
+    .carritoContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        padding: 20px;
+background-color: #FAFAFF;
+box-shadow: 0px 0px 10px 0px #00000040;
+margin-top: 10%;
+    }
+    .encabezados-carrito, .carritoitem1, .carritoitem2 {
+        display: contents;
+    }
+    img.carritoImg2 .carritoImg1{
+        width: 200px;
+    }
+    span.tituloCarrito{
+      font-size: 2em;
+      font-family:var(--alternative-font);
+      font-weight: 700;
+        border:3px solid transparent;
+        border-bottom-color: var(--primary-solid);
+    }
+    h2.headerCarrito1, .headerCarrito2, .headerCarrito3, .headerCarrito4 {
+        text-align: center;
+        
+    }
+    .Total{
+        background-color: #FAFAFF;
+box-shadow: 0px 0px 10px 0px #00000040;
+font-family: var(--base-font);
+font-size: 0.5em;
+font-weight: 600;
+    }
+    table.Total{
+        margin-left:auto;
+    }
+    .cantidadCarrito1, .precioCarrito1,   .cantidadCarrito2, .precioCarrito2 {
+        text-align: center;
+    }
+    .resumen-titulo {
+        font-size: 2em;
+        font-family:var(--alternative-font);
+        font-weight: 700;
+        border:3px solid transparent;
+        border-bottom-color: var(--primary-solid);
+    }
+    .ResumenPago{
+        font-size: 2em;
+        font-family:var(--alternative-font);
+        font-weight: 700;
+        background-color: var(--primary-solid);
+        color: var(--light-font-solid);
+    }
 /*admin*/
 button {
   background: white;

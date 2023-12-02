@@ -1,31 +1,12 @@
-// shopController.js
-const getShopPage = (req, res) => {
-    res.send('Página de la tienda');
-  };
-  
-  const getItemDetails = (req, res) => {
-    const itemId = req.params.id;
-    res.send(`Detalles del artículo con ID ${itemId}`);
-  };
-  
-  const addItemToCart = (req, res) => {
-    const itemId = req.params.id;
-    res.send(`Agregar el artículo con ID ${itemId} al carrito`);
-  };
-  
-  const viewCart = (req, res) => {
-    res.send('Página del carrito de compras');
-  };
-  
-  const processCart = (req, res) => {
-    res.send('Procesar el carrito de compras');
-  };
-  
-  module.exports = {
-    getShopPage,
-    getItemDetails,
-    addItemToCart,
-    viewCart,
-    processCart,
-  };
-  
+const express = require('express');
+const router = express.Router();
+
+// Controlador para la página principal de la tienda
+const shopController = (req, res) => {
+    res.send('Esta ruta devuelve la vista de productos.');
+};
+
+// Ruta para la página principal de la tienda
+router.get('/shop', shopController);
+
+module.exports = router;

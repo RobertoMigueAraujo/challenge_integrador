@@ -1,37 +1,29 @@
 const express = require('express');
 const router = express.Router();
 
+// Ruta para la página principal de la tienda
 router.get('/', (req, res) => {
-  res.send('Página de la tienda');
+    res.send('Esta es la página principal de la tienda');
 });
 
+// Ruta para la página de un artículo específico
 router.get('/item/:id', (req, res) => {
-  res.send(`Detalles del artículo con ID ${req.params.id}`);
+    res.send(`Esta es la página del artículo con ID: ${req.params.id}`);
 });
 
+// Ruta para agregar un artículo al carrito
 router.post('/item/:id/add', (req, res) => {
-  res.send(`Agregar el artículo con ID ${req.params.id} al carrito`);
+    res.send(`Artículo con ID: ${req.params.id} añadido al carrito`);
 });
 
-
+// Ruta para la página del carrito de compras
 router.get('/cart', (req, res) => {
-  res.send('Página del carrito de compras');
+    res.send('Esta es la página del carrito de compras');
 });
 
-
+// Ruta para realizar una compra
 router.post('/cart', (req, res) => {
-  res.send('Procesar el carrito de compras');
+    res.send('Compra realizada con éxito');
 });
-
-module.exports = router;
-
-
-// shop.js
-
-router.get('/', shopController.getShopPage);
-router.get('/item/:id', shopController.getItemDetails);
-router.post('/item/:id/add', shopController.addItemToCart);
-router.get('/cart', shopController.viewCart);
-router.post('/cart', shopController.processCart);
 
 module.exports = router;

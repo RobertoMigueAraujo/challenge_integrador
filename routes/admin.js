@@ -1,44 +1,34 @@
 const express = require('express');
 const router = express.Router();
 
-// Ruta para /admin (GET)
-router.get('/', (req, res) => {
-  res.send('Página de administración');
+// Ruta para la página principal de administración
+router.get('/admin', (req, res) => {
+    res.send('Esta es la página principal de administración');
 });
 
-// Ruta para /admin/create (GET)
-router.get('/create', (req, res) => {
-  res.send('Página de create');
+// Ruta para la página de creación de un nuevo ítem
+router.get('/admin/create', (req, res) => {
+    res.send('Esta es la página para crear un nuevo ítem');
 });
 
-// Ruta para /admin/create (POST)
-router.post('/create', (req, res) => {
-  res.send('Crear un elemento');
+// Ruta para crear un nuevo ítem
+router.post('/admin/create', (req, res) => {
+    res.send('Nuevo ítem creado');
 });
 
-
-router.get('/edit/:id', (req, res) => {
-  res.send(`Página para editar el elemento con ID ${req.params.id}`);
+// Ruta para la página de edición de un ítem específico
+router.get('/admin/edit/:id', (req, res) => {
+    res.send(`Esta es la página para editar el ítem con ID: ${req.params.id}`);
 });
 
-
-router.put('/edit/:id', (req, res) => {
-  res.send(`Editar el elemento con ID ${req.params.id}`);
+// Ruta para editar un ítem específico
+router.put('/admin/edit/:id', (req, res) => {
+    res.send(`Ítem con ID: ${req.params.id} editado con éxito`);
 });
 
-
-router.delete('/delete/:id', (req, res) => {
-  res.send(`Eliminar el elemento con ID ${req.params.id}`);
+// Ruta para eliminar un ítem específico
+router.delete('/admin/delete/:id', (req, res) => {
+    res.send(`Ítem con ID: ${req.params.id} eliminado con éxito`);
 });
-
-module.exports = router;
-// admin.js
-
-const adminController = require('../controllers/adminController');
-
-router.get('/', adminController.getAdminPage);
-router.get('/create', adminController.createItem);
-router.get('/edit/:id', adminController.editItem);
-router.get('/delete/:id', adminController.deleteItem);
 
 module.exports = router;
