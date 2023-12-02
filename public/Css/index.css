@@ -652,62 +652,156 @@ p.textoRegister {
 
 
 /*carrito*/
-    .carritoContainer {
+
+    .carritoContainer1, .carritoContainer2, .carritoContainer3 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
-        padding: 20px;
+      padding: 10px;
 background-color: #FAFAFF;
-box-shadow: 0px 0px 10px 0px #00000040;
-margin-top: 10%;
+box-shadow: 0px 0px 10px 0px var(--Dark-solid);
+align-items: center;
+border-radius: 16px;
+margin: 2%;
     }
     .encabezados-carrito, .carritoitem1, .carritoitem2 {
         display: contents;
     }
-    img.carritoImg2 .carritoImg1{
+    img.carritoImg2 {
+        width: 200px;
+    }
+    img.carritoImg1{
         width: 200px;
     }
     span.tituloCarrito{
-      font-size: 2em;
+      font-size: 3em;
       font-family:var(--alternative-font);
       font-weight: 700;
         border:3px solid transparent;
         border-bottom-color: var(--primary-solid);
+    align-items: center;
+    margin: 15%;
+
+    
+    }
+    .contenedorTitulo {
+    margin-top: 5%;
+    align-items: center;
+  text-align: left;
+    
+      
     }
     h2.headerCarrito1, .headerCarrito2, .headerCarrito3, .headerCarrito4 {
         text-align: center;
+
         
     }
-    .Total{
-        background-color: #FAFAFF;
-box-shadow: 0px 0px 10px 0px #00000040;
-font-family: var(--base-font);
-font-size: 0.5em;
-font-weight: 600;
-    }
+
     table.Total{
         margin-left:auto;
+        background-color: #FAFAFF;
+        box-shadow: 0px 0px 10px 0px var(--Dark-solid);
+        font-family: var(--base-font);
+        font-weight: 600;
+        border-radius: 16px;
+        padding: var(--spacing-24);
+        margin-bottom: 20px;
     }
     .cantidadCarrito1, .precioCarrito1,   .cantidadCarrito2, .precioCarrito2 {
         text-align: center;
     }
-    .resumen-titulo {
-        font-size: 2em;
+    span.resumen-titulo {
+        font-size: 3em;
         font-family:var(--alternative-font);
         font-weight: 700;
         border:3px solid transparent;
         border-bottom-color: var(--primary-solid);
+        align-self: flex-end;
+        margin: 20px;
     }
-    .ResumenPago{
-        font-size: 2em;
+    span.ResumenPago{
+        font-size: 3em;
         font-family:var(--alternative-font);
         font-weight: 700;
         background-color: var(--primary-solid);
         color: var(--light-font-solid);
+       align-self: flex-end;
+       cursor: pointer;
+       width:36%;
+       text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      padding: var(--spacing-24);
+   }
+    .cantidadCarrito2, .cantidadCarrito1 {
+        display: flex; 
+        margin:50%;
+        align-items: center;
+        justify-self:center ;
+
     }
+    
+    .contadorCarrito2, .contadorCarrito1 {
+        display: flex; 
+        flex-direction: column; 
+    }
+    .carritoitem1, .carritoitem2 {
+        margin-top: 20px;
+    }
+    .plus, .minus {
+        background-color:var(--primary-solid); 
+        color: var(--light-font-solid); 
+        display: inline-block; 
+        width: 20px; 
+        height: 20px; 
+        text-align: center; 
+        line-height: 20px; 
+        margin: 5px;
+        cursor: pointer;
+    }
+    h3.number1, h3.number2  {
+        width: 20px;
+        height: 20px;
+       
+    }
+    .botonEliminar1, .botonEliminar2 {
+      margin: 40%;
+    }
+    .resumenTotal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      
+      td.total-texto1 {
+  
+        border-top: 2px solid red;
+      
+    }
+      td.total-texto2{
+        border-top: 2px solid red;
+       
+      }
+      .numeroCarrito {
+        position: absolute;
+        width: 2em; 
+        height: 2em; 
+        background-color: red; 
+        color: white; 
+        border-radius: 50%; 
+        text-align: center; 
+        line-height: 2em;
+        font-size: 0.5em; 
+      }
+        .carritoCarrito {
+            position: relative;
+            display: inline-block;
+        }
+    
 /*admin*/
 button {
-  background: white;
+  background:var(--light-font-solid);
     border: 1px solid transparent;
     cursor: pointer;
 
