@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <title>REGISTER</title>
+
+
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item width-submenu">
+                    <a class="navbar__link width-icon" href="./shop.html">VER TIENDA</a>
+                   
+                </li>
+                <li>
+                    <a class="navbar__link" href="/admin.html">ADMIN</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./pages/logout.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!--fin header-->
+    <div class="container">
+        <div class="contenidoRegister">
+        <h1>CREA TU CUENTA</h1>
+        <p class="textoRegister">Completa el formulario para ser parte del mundo de los Funkos</p>
+        <div class="form-field">
+            <label for="nombre">Nombre:</label>
+            <input  type="text" name="nombre"  placeholder="John" class="nombre" class="nombreRegister">
+        </div>
+        <div class="form-field">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Doe" class="apellidoRegister">
+        </div>
+        <div class="form-field">
+            <label  for="email">Email:</label >
+            <input type="email" name="email"  placeholder="johndoe@correo.com" class="emailRegister" >
+        </div>
+        <div class="form-field">
+            <label for="contraseña">Contraseña:</label >
+            <input  type="password" name="contraseña"  placeholder="********" class="contraseñaRegister">
+        </div>
+        <div class="form-field">
+            <label for="repitaContraseña">Repita Contraseña:</label >
+            <input type="password" name="repitaContraseña"  placeholder="********" class="repeatRegister">
+        </div>
+        <div class="form-field">
+            <div class="checkbox-container">
+                <button type="submit" class="custom-button"> Registrar </button>
+                <input type="checkbox" name="aceptarTerminos" id="aceptarTerminos" required>
+                <label for="aceptarTerminos">Acepto<a href="#"  class="Terminos">Términos y Condiciones</a></label>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+ <!--aca empieza el footer-->
+
+ <footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="/shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <picture class="picture">
+        <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+    </picture>
+    
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+</html>

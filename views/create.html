@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE</title>
+    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item width-submenu">
+                    <a class="navbar__link width-icon" href="./shop.html">VER TIENDA</a>
+                   
+                </li>
+                <li>
+                    <a class="navbar__link" href="./admin.html">ADMIN</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./logout.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <!--fin header-->
+    <main>
+    <div class="formulario-create">
+   <h1>CREAR NUEVO ITEM</h1>
+   <form action="post" id="miFormulario1" enctype="application/x-www-form-urlencoded">
+    <div class="categoriaCreate">
+    <label for="categoria">Categoria:</label>
+    <select name="seleccionar" id="categoria" >
+        <option value="" disabled selected>Seleccionar</option>
+     
+    </select>
+    <label for="licencia">Licencia:</label>
+    <select name="seleccionar" id="licencia">
+        <option value="" disabled selected>Seleccionar</option>
+    </select>
+</div>
+<div class="productoCreate">
+    <label for="NombreDelProducto">Nombre del producto:</label>
+    <input type="NombreDelProducto" name="NombreDelProducto" id="NombreDelProducto" placeholder="Kakashi Hataki Shipudden Saga"><br>
+</div>
+<div class="descripcion">
+    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="60" rows="10"  placeholder="Descripcion del producto"></textarea><br>
+</div>
+<div class="textProducto">
+    <label for="sku">SKU:</label>
+    <input type="text" name="sku" id="sku" placeholder="SSK111AB001">
+    <label for="precio">PRECIO:</label>
+    <input type="text" name="precio" id="precio" placeholder="$ 0.000,00">
+    <label for="stock">STOCK:</label>
+    <input type="text" name="stock" id="stock" placeholder="0">
+</div>
+<div class="descuentoProducto">
+    <label for="descuento">Descuento:</label>
+    <input type="text" name="descuento" id="descuento" placeholder="0%">
+    <label for="CUOTAS">Cuotas:</label>
+    <select name="cuotas" id="cuotas">
+        <option value="3">3 cuotas sin interés
+    </select>
+    </option>
+</div>
+<div class="imagenesCreate">
+    <label for="Imagenes">Imagenes:</label>
+<input type="file" id="Imagenes" name="Imagenes">
+</div>
+<div class="botonEliagre">
+    <button id="aceptarBoton" type="submit">Aceptar</button>
+    <button id="resetearBoton" type="reset">Limpiar</button>
+</div>
+</form>
+</main>
+
+<!--aca empieza el footer-->
+
+<footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="./shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <picture class="picture">
+        <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+    </picture>
+    
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<script src="Css/js/create.js"></script>
+
+</body>
+</html>
