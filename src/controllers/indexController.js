@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 // Controlador para la página principal de la tienda
-const authController = (req, res) => {
-    res.send('Esta ruta devuelve la vista de productos.');
+const indexController = (req, res) => {
+    res.render('shop/index', { pageTitle: 'Página de productos' });
 };
 
 // Ruta para la página principal de la tienda
-router.get('/auth', authController);
+router.get('/index', indexController);
 
 module.exports = router;

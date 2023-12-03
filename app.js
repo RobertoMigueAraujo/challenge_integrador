@@ -1,16 +1,30 @@
 const express = require('express');
 const app = express();
-const routes = require('./routes/index');
-const shopRoutes = require('./routes/shop');
-const adminRoutes = require('./routes/admin');
-const authRoutes = require('./routes/auth');
+const path = require('path');
 
+// Establecer el motor de vistas EJS
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+// Archivos estáticos
 app.use(express.static('public'));
-app.use('/', routes);
-app.use('/shop', shopRoutes);
-app.use('/admin', adminRoutes);
-app.use('/auth', authRoutes);
 
-app.listen(3000, () => {
-    console.log('El servidor está corriendo en http://localhost:3000');
+// Importar las rutas
+const shopRoutes = require('./src/routes/shop');
+
+// Usar las rutas
+app.use('./src/routes/shop', shop);
+
+const contact = require('./routes/contact');
+const faq = require('./routes/faq');
+const about = require('./routes/about');
+
+app.use('/', contact);
+app.use('/', faq);
+app.use('/', about);
+
+// Iniciar el servidor
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor iniciado en el puerto ${PORT}`);
 });

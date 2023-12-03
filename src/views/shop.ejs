@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <title>SHOP</title>
+</head>
+    <header> 
+        <nav class="navbar">
+                <picture class="navbar__logo">
+                    <a href="./index.html">
+                        <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                    </a>
+                </picture>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item width-submenu">
+                    <a class="navbar__link width-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                    <li class="submenu-item"> <a href="" class="submenu__link">Funkos</a> </li>
+                    <li class="submenu-item"> <a href="" class="submenu__link">Remeras</a> </li>
+                    <li class="submenu-item"> <a href="" class="submenu__link">LLaveros</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./contacto.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./login.html">LOGIN</a>
+                </li class="navbar__item>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./carrito.html">
+                        <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito"> 
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header> <!--fin header-->
+    
+    <aside class="shop-container">
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="buscar">BUSCAR</label>
+            <input type="text" name="buscar" id="buscar" placeholder="item o categoria"> 
+            <label for="OrdenarPor">ORDENAR POR</label>
+            <input type="text" name="OrdenarPor" id="OrdenarPor" placeholder="Mayor a menor">
+            <label for="precio">PRECIO</label>
+            <label for="min">min</label>
+            <input type="text" name="min" id="min" placeholder="0">
+            <label for="max">max</label>
+            <input type="text" name="max" id="max" placeholder="0">    
+            <label for="filtrar">FILTRAR</label>
+            <input type="checkbox" name="opcion[]" id="nuevos" value="NUEVOS">
+            <label for="nuevos">NUEVOS</label>
+            <input type="checkbox" name="opcion[]" id="ofertas" value="OFERTAS">
+            <label for="ofertas">OFERTAS</label>
+            <input type="checkbox" name="opcion[]" id="edicion especial" value="EDICION ESPECIAL">
+            <label for="edicion especial">EDICION ESPECIAL</label>
+            <input type="checkbox" name="opcion[]" id="favoritos" value="FAVORITOS">
+            <label for ="favoritos">FAVORITOS</label>
+        </form>
+    </aside>
+    <!--esta es la parte de shop-->
+    <div class="shop-principal" id="shop-principal">
+        <section class="shop-groups">
+          <% products.forEach(product => { %>
+            <section class="shop-products">
+              <% product.forEach(item => { %>
+                <article>
+                  <div class="product-wrapper">
+                    <div class="product-badge"><%= item.badge %></div>
+                    <a href="<%= item.link %>">
+                      <picture>
+                        <img src="<%= item.image %>" alt="<%= item.alt %>">
+                      </picture>
+                      <div>
+                        <p class="shop-parrafo"><%= item.category %></p>
+                        <h4 class="shop-h4"><%= item.name %></h4>
+                        <p class="shop-prix">$ <%= item.price %></p>
+                        <p class="shop-cuotas"><%= item.payment %></p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              <% }); %>
+            </section>
+          <% }); %>
+        </section>
+      </div>
+      
+</div> 
+<div class="pagination">
+    <div class="left-arrow arrow">&lt;</div>
+    <div class="number-box">1</div>
+    <div class="number-box">2</div>
+    <div class="dots">...</div>
+    <div class="number-box">9</div>
+    <div class="number-box">10</div>
+    <div class="right-arrow arrow">&gt;</div>
+</div> 
+<!--aca termina la parte del shop-->
+ <!--el footer-->
+<footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="./shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <picture class="picture">
+        <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+    </picture>
+    
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    </body>>
+</html>
