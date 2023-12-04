@@ -1,4 +1,53 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <title>Home | Funkoshop</title>
+    
+</head>
+<body>
+    <header> 
+        <nav class="navbar">
+                <picture class="navbar__logo">
+                    <a href="./index.html">
+                        <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
+                    </a>
+                </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item width-submenu">
+                   
+             <a class="navbar__link width-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+
+                    <li class="submenu-item">
+                         <a href="" class="submenu__link">Funkos</a>
+                         </li>
+                    <li class="submenu-item"> 
+                        <a href="" class="submenu__link">Remeras</a> 
+                    </li>
+                    <li class="submenu-item">
+                         <a href="" class="submenu__link">LLaveros</a>
+                     </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./contacto.html">CONTACTO</a>
+                </li class="navbar__item">
+                <li>
+                    <a class="navbar__link" href="./login.html">LOGIN</a>
+                </li class="navbar__item>
+                <li class= "navbar__item">
+                    <a class="navbar__cart"  href="./carrito.html">
+                        <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito"> 
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
  <!--fin header-->
     <section class="hero">
         <article class="hero__content container">
@@ -102,7 +151,21 @@
 </section>
    </main>
 
-   <%- include('partials/footer') %>
+   <footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="./shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./register.html">REGISTRARSE</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <picture class="picture">
+        <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop">
+    </picture>
+    
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
   
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
