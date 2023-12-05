@@ -115,6 +115,14 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-36);
+   
+}
+img.pictureFooter {
+  margin-left: 70%;
+}
+.navbarContainer{
+  display: flex;
+  padding: var(--spacing-36);
 }
 .navbar__logo{
 max-width: 300px;
@@ -182,6 +190,7 @@ background-position: top;
     backdrop-filter:  blur(2px) brightness(.9);
 }
 */
+  
 .hero__content{
     display: flex;
     flex-direction: column;
@@ -267,6 +276,9 @@ background-position: top;
 /* slider */
 button#substract {
     width: 1.5em;
+}
+h3.item--name {
+    font-size: 2em;
 }
 article.item--info {
     display: inline-block;
@@ -435,12 +447,11 @@ picture.item--img.card-item__cover {
 
 .picture {
     order: 1; 
+  
     
 }
-.picture.picture{
-    margin-left: 80%;
-    align-items: center;
-}
+
+  
 .footer__copy {
     text-align: center;
     flex-grow: 1; 

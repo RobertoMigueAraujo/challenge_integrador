@@ -6,7 +6,9 @@ const shopRoutes = require('./src/routes/shopRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
 const authRoutes = require('./src/routes/authRoutes');
 
-app.use('/home', mainRoutes);
+app.use(express.static('public'));
+
+app.use('/', mainRoutes);
 app.use('/contact', mainRoutes);
 app.use('/about', mainRoutes);
 app.use('/faqs', mainRoutes);
