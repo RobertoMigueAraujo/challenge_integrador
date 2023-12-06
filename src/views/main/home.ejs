@@ -9,52 +9,14 @@
     
 </head>
 <body>
-    <header> 
-        <nav class="navbar">
-                <picture class="navbar__logo">
-                    <a href="./index.html">
-                        <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
-                    </a>
-                </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item width-submenu">
-                   
-             <a class="navbar__link width-icon" href="../shop/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-
-                    <li class="submenu-item">
-                         <a href="" class="submenu__link">Funkos</a>
-                         </li>
-                    <li class="submenu-item"> 
-                        <a href="" class="submenu__link">Remeras</a> 
-                    </li>
-                    <li class="submenu-item">
-                         <a href="" class="submenu__link">LLaveros</a>
-                     </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../main/contact.html">CONTACTO</a>
-                </li class="navbar__item">
-                <li>
-                    <a class="navbar__link" href="../auth/login.html">LOGIN</a>
-                </li class="navbar__item>
-                <li class= "navbar__item">
-                    <a class="navbar__cart"  href="./carrito.html">
-                        <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito"> 
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
+    <%- include('partials/header.ejs') %>
  <!--fin header-->
  <main class="container">
     <section class="hero">
         <article class="hero__content container">
             <h3 class="hero__title">Nuevos ingresos</h3>
             <p class="hero__text">Descubrí el proximo Funko Pop de tu colección</p>
-            <a class="hero__link" href="/shop.html">SHOP</a>
+            <a class="hero__link" href="../shop/shop.ejs">SHOP</a>
         </article>
      </section>
    <main class="main_container">
@@ -62,7 +24,7 @@
         <article class="collection__content">
             <h3 class="collection__title">Star Wars & The Mandalorian</h3>
             <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección</p>
-            <a class="collection__link" href="/shop.html">VER COLECCIÓN</a>
+            <a class="collection__link" href="../shop/shop.ejs">VER COLECCIÓN</a>
         </article>
         <picture class="collection__cover">
             <img src="/public/img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
@@ -73,7 +35,7 @@
     <article class="collection__content">
         <h3 class="collection__title">Pokemon Indigo</h3>
         <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección de amigos</p>
-        <a class="collection__link" href="./shop.html">VER COLECCIÓN</a>
+        <a class="collection__link" href="../shop/shop.ejs">VER COLECCIÓN</a>
     </article>
     <picture class="collection__cover">
         <img src="/public/img/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie Pokemon">
@@ -83,7 +45,7 @@
     <article class="collection__content">
         <h3 class="collection__title">Harry Potter</h3>
         <p class="collection__text">Revive todos los recuerdos de una saga llena de magia y encanto</p>
-        <a class="collection__link" href="./shop.html" >VER COLECCIÓN</a>
+        <a class="collection__link" href="../shop/shop.ejs" >VER COLECCIÓN</a>
     </article>
     <picture class="collection__cover">
         <img src="/public/img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus del snape de la pelicula Harry Potter">
@@ -152,23 +114,7 @@
 </section>
    </main>
 </main>
-   <footer class="footer">
-    <div class="navbarContainer">
-    <nav class="navbar container">
-        <ul class="navbar__item">
-            <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">SHOP</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="../auth/register.html">REGISTRARSE</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="../auth/login.html">LOGIN</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="../main/contact.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-   
-        <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop" class="pictureFooter">
-   
-</div>
-    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-
-</footer>
+<%- include('footer.ejs') %>
   
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>

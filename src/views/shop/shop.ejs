@@ -7,38 +7,8 @@
     <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
     <title>SHOP</title>
 </head>
-    <header> 
-        <nav class="navbar">
-                <picture class="navbar__logo">
-                    <a href="./index.html">
-                        <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
-                    </a>
-                </picture>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item width-submenu">
-                    <a class="navbar__link width-icon" href="../shop/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                    <li class="submenu-item"> <a href="" class="submenu__link">Funkos</a> </li>
-                    <li class="submenu-item"> <a href="" class="submenu__link">Remeras</a> </li>
-                    <li class="submenu-item"> <a href="" class="submenu__link">LLaveros</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../main/contact.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../auth/login.html">LOGIN</a>
-                </li class="navbar__item>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="./carrito.html">
-                        <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito"> 
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-    </header> <!--fin header-->
+<%- include('partials/header.ejs') %>
+    <!--fin header-->
     <main class="container"></main>
     <aside class="shop-container">
        
@@ -80,10 +50,12 @@
         </form>
     </aside>
     <!--esta es la parte de shop-->
+    <!--
 <div class="shop-principal"  id="shop-principal">
 <section class="shop-groups">
+
     <section class="shop-products">
-        <!-- Grupo 1 de productos -->
+        <!-- Grupo 1 de productos 
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -100,6 +72,7 @@
                 </div>
             </a>
         </article>
+
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -116,6 +89,7 @@
                 </div>
             </a>
         </article>
+
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -127,7 +101,7 @@
                 <div>
                     <p class="shop-parrafo">HARRY POTTER</p>
                     <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="shop-prix">$ 1799,99.-</p>
+                    <p class="shop-prix">$ 1799,99</p>
                     <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
                 </div>
             </a>
@@ -135,7 +109,7 @@
     </section>
 
     <section class="shop-products">
-        <!-- Grupo 2 de productos -->
+        <!-- Grupo 2 de productos 
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -187,7 +161,7 @@
     </section>
     
     <section class="shop-products">
-        <!-- Grupo 3 de productos -->
+        <!-- Grupo 3 de productos 
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -239,6 +213,35 @@
     </section>
 </section>
 </div> 
+-->
+
+<div class="shop-principal" id="shop-principal">
+    <section class="shop-groups">
+        <% productos.forEach(producto => { %>
+            <section class="shop-products">
+                <!-- Grupo de productos -->
+                <% producto.forEach(item => { %>
+                    <article>
+                        <div class="product-wrapper">
+                            <div class="product-badge">Nuevo</div>
+                            <a href="">
+                                <picture>
+                                    <img src="<%= item.imagen %>" alt="Figura coleccionable Funko">
+                                </picture>
+                                <div>
+                                    <p class="shop-parrafo"><%= item.categoria %></p>
+                                    <h4 class="shop-h4"><%= item.nombre %></h4>
+                                    <p class="shop-prix"><%= item.precio %></p>
+                                    <p class="shop-cuotas"><%= item.cuotas %></p>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                <% }) %>
+            </section>
+        <% }) %>
+    </section>
+</div>
 
 <div class="pagination">
     <div class="left-arrow arrow">&lt;</div>
@@ -252,22 +255,7 @@
 </main>
 <!--aca termina la parte del shop-->
  <!--el footer-->
-<footer class="footer">
-    <div class="navbarContainer">
-    <nav class="navbar container">
-        <ul class="navbar__item">
-            <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">SHOP</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="../auth/register.html">REGISTRARSE</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="../auth/login.html ">LOGIN</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="../main/contact.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-  
-        <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop" class="pictureFooter">
-  </div>
-    
-    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-</footer>
+ <%- include('partials/footer.ejs') %>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     </body>>

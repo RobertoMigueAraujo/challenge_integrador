@@ -10,45 +10,8 @@
     
 </head>
 <body class="custom-body-class">
-    <header> 
-        <nav class="navbar">
-                <picture class="navbar__logo">
-                    <a href="./index.html">
-                        <img src="/public/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkshop">
-                    </a>
-                </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item width-submenu">
-                   
-             <a class="navbar__link width-icon" href="../shop/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
+    <%- include('partials/header-item.ejs') %>
 
-                    <li class="submenu-item">
-                         <a href="" class="submenu__link">Funkos</a>
-                         </li>
-                    <li class="submenu-item"> 
-                        <a href="" class="submenu__link">Remeras</a> 
-                    </li>
-                    <li class="submenu-item">
-                         <a href="" class="submenu__link">LLaveros</a>
-                     </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navbar__link" href="../main/contact.html">CONTACTO</a>
-                </li class="navbar__item">
-                <li>
-                    <a class="navbar__link" href="../auth/login.html">LOGIN</a>
-                </li class="navbar__item>
-                <li class="navbar__item">
-                    <a class="navbar__cart"  href="./cart.html">
-                        <img src="/public/img/icons/cart-icon.svg" alt="icono de carrito"> 
-                    </a>
-                </l>
-
-            </ul>
-        </nav>
-    </header> 
 
         <main class="container">
             <div class="cartItem">
@@ -137,21 +100,7 @@
         </main>
         
    <!--footer-->
-    <footer class="footer">
-        <div class="navbarContainer">
-        <nav class="nabar container">
-            <ul class="navbar__item">
-                <li class="navbar__item"><a class="navbar__link" href="./shop/shop.html">SHOP</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="../auth/register.html">REGISTRARSE</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="../auth/login.html">LOGIN</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="../main/contact.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-     
-            <img src="/public/img/branding/isotype.svg" alt="Isologotipo de la marca funkoshop" class="pictureFooter">
-      </div>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+   <%- include('partials/footer.ejs') %>
     
        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
