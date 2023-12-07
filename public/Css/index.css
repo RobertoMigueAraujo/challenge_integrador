@@ -1080,11 +1080,9 @@ button#resetearBoton {
     padding: var(--spacing-16);
 }
 .listadoAdmin {
-    align-items: center;
-    justify-content: space-around;
-    display: -webkit-box;
-    margin-inline: 3%;
-    margin-inline-end: 40%;
+
+    display: flex;
+    
 }
 .agregarAdmin {
     display: block;

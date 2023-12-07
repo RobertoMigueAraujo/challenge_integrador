@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="stylesheet" href="/Css/index.css">
     <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
     <title>REGISTER</title>
 
@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <%- include('partials/header-tienda.ejs') %>
+    <%- include('../partials/header-tienda.ejs') %>
 
      <!--fin header-->
      
@@ -19,6 +19,7 @@
         <div class="contenidoRegister">
         <h1>CREA TU CUENTA</h1>
         <p class="textoRegister">Completa el formulario para ser parte del mundo de los Funkos</p>
+        <form action="/auth/register" method="post" id="formulario2" enctype="application/x-www-form-urlencoded"></form>
         <div class="form-field">
             <label for="nombre">Nombre:</label>
             <input  type="text" name="nombre"  placeholder="John" class="nombre" class="nombreRegister">
@@ -46,13 +47,14 @@
                 <label for="aceptarTerminos">Acepto<a href="#"  class="Terminos">Términos y Condiciones</a></label>
             </div>
         </div>
+    </form>
     </div>
     </div>
     
     
  <!--aca empieza el footer-->
 
- <%- include('partials/footer.ejs') %>
+ <%- include('../partials/footer.ejs') %>
 
    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>

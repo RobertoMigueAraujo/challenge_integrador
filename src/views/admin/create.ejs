@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CREATE</title>
-    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="stylesheet" href="/Css/index.css">
     <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <%- include('partials/header-tienda.ejs') %>
+    <%- include('../partials/header-tienda.ejs') %>
 
      <!--fin header-->
     <main class="container">
     <div class="formulario-create">
    <h1>CREAR NUEVO ITEM</h1>
-   <form action="post" id="miFormulario1" enctype="application/x-www-form-urlencoded">
+   <form action="/admin/create" id="miFormulario1" enctype="application/x-www-form-urlencoded">
     <div class="categoriaCreate">
     <label for="categoria">Categoria:</label>
     <select name="seleccionar" id="categoria" >
@@ -63,7 +63,7 @@
 
 <!--aca empieza el footer-->
 
-<%- include('partials/footer.ejs') %>
+<%- include('../partials/footer.ejs') %>
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="Css/js/create.js"></script>
 

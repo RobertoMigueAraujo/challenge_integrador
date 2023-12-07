@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/Css/index.css">
+    <link rel="stylesheet" href="/Css/index.css">
     <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
     <title>EDIT</title>
 
     
 </head>
 <body>
-    <%- include('partials/header-tienda.ejs') %>
+    <%- include('../partials/header-tienda.ejs') %>
     <!--fin header-->
 
 
@@ -77,11 +77,11 @@
         <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
 <div class="imagenesEdit">
         <div class="imagen-izquierda">
-            <img src="/public/img/icons/kakashi_hatake_front.svg" alt="Imagen frente" class="imagenFrente">
+            <img src="/img/icons/kakashi_hatake_front.svg" alt="Imagen frente" class="imagenFrente">
             <p>Frente</p>
           </div>
           <div class="imagen-derecha">
-            <img src="/public/img/icons/kakashi_hatake_back.svg" alt="Imagen dorso" class="imagenDorso">
+            <img src="/img/icons/kakashi_hatake_back.svg" alt="Imagen dorso" class="imagenDorso">
             <p>Dorso</p>
           </div>
         </div>
@@ -94,7 +94,7 @@
     </main>
     <!--footer-->
 
-    <%- include('partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 
    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>

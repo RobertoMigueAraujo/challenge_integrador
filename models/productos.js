@@ -19,8 +19,7 @@ const productos = [
         imagen: '/public/img/harry-potter/luna-1.webp',
         precio: '$ 1799,99',
         cuotas: '3 CUOTAS SIN INTERES'
-    },
-   
+    }
 ];
 
 module.exports = productos;
