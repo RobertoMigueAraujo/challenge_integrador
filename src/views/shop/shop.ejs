@@ -55,7 +55,7 @@
 <section class="shop-groups">
 
     <section class="shop-products">
-        <!-- Grupo 1 de productos 
+     
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -109,7 +109,7 @@
     </section>
 
     <section class="shop-products">
-        <!-- Grupo 2 de productos 
+      
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -161,7 +161,7 @@
     </section>
     
     <section class="shop-products">
-        <!-- Grupo 3 de productos 
+   
         <article>
             <div class="product-wrapper">
                 <div class="product-badge">Nuevo</div> 
@@ -213,35 +213,37 @@
     </section>
 </section>
 </div> 
+
 -->
 
-<div class="shop-principal" id="shop-principal">
+<div class="shop-principal"  id="shop-principal">
     <section class="shop-groups">
-        <% productos.forEach(producto => { %>
-            <section class="shop-products">
-                <!-- Grupo de productos -->
-                <% producto.forEach(item => { %>
-                    <article>
-                        <div class="product-wrapper">
-                            <div class="product-badge">Nuevo</div>
-                            <a href="">
-                                <picture>
-                                    <img src="<%= item.imagen %>" alt="Figura coleccionable Funko">
-                                </picture>
-                                <div>
-                                    <p class="shop-parrafo"><%= item.categoria %></p>
-                                    <h4 class="shop-h4"><%= item.nombre %></h4>
-                                    <p class="shop-prix"><%= item.precio %></p>
-                                    <p class="shop-cuotas"><%= item.cuotas %></p>
-                                </div>
-                            </a>
-                        </div>
-                    </article>
-                <% }) %>
-            </section>
-        <% }) %>
+        <section class="shop-products">
+            <% items.forEach(function(item) { %>
+                <article>
+                    <div class="product-wrapper">
+                        <div class="product-badge">Nuevo</div> 
+                        <a href="">
+                            <picture>
+                                <img src="<%= item.image %>" alt="<%= item.name %>">
+                            </picture>
+                            <div>
+                                <p class="shop-parrafo"><%= item.category %></p>
+                                <h4 class="shop-h4"><%= item.name %></h4>
+                                <p class="shop-prix">$ <%= item.price %></p>
+                                <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            <% }); %>
+        </section>
     </section>
 </div>
+
+
+
+
 
 <div class="pagination">
     <div class="left-arrow arrow">&lt;</div>
@@ -253,7 +255,7 @@
     <div class="right-arrow arrow">&gt;</div>
 </div> 
 </main>
-<!--aca termina la parte del shop-->
+
  <!--el footer-->
  <%- include('../partials/footer.ejs') %>
 

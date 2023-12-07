@@ -111,19 +111,21 @@ header{
     padding: var(--spacing-36);
 }
 .navbar{
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-36);
    
 }
+
 img.pictureFooter {
-  margin-left: 70%;
-}
-.navbarContainer{
-  display: flex;
-  padding: var(--spacing-36);
-}
+    margin-left: 40%;
+    
+  }
+  .navbarContainer{
+    display: flex;
+   
+  }
 .navbar__logo{
 max-width: 300px;
 }
@@ -439,7 +441,6 @@ picture.item--img.card-item__cover {
 
 .footer {
     background-color: var(--dark-bg-solid);
-    padding: var(--spacing-68);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -802,6 +803,12 @@ margin: 2%;
         }
     
 /*admin*/
+
+table.wrapperProduct{
+overflow-y: auto;
+max-width:100%;
+
+}
 button {
   background:var(--light-font-solid);
     border: 1px solid transparent;
@@ -1095,8 +1102,9 @@ form#search-form {
     padding: 10px;
 }
 h1.tituloAdmin {
-    margin-right: 50%;
+    margin-right: 20%;
 }
+
 /*animation va al final del codigo*/ 
 @keyframes fade {
     0% {

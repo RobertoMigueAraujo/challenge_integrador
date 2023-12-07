@@ -12,7 +12,6 @@ const { body } = require('express-validator');
  
 router.get('/login', authControllers.login);
 router.post('/login', [
-  // Aquí irían tus validaciones para el login
   body('email').isEmail().withMessage('Por favor ingresa un email válido'),
   body('contraseña').isLength({ min: 5 }).withMessage('La contraseña debe tener al menos 5 caracteres')
 ], authControllers.login);
