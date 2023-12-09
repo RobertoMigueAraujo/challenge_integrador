@@ -18,8 +18,7 @@ const authControllers = {
   },
 
   logout: (req, res) => {
-   
-    res.render('auth/logout', { title: 'Cierre de session' });
+    res.send('<h1>Cierre de session</h1>');
   }
 };
 

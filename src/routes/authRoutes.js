@@ -2,13 +2,6 @@ const express = require('express');
 const router = express.Router();
 const authControllers = require('../controllers/authControllers');
 const { body } = require('express-validator');
-
-//router.get('/login', authControllers.login);
-//router.post('/login', authControllers.processLogin);
-//router.get('/register', authControllers.register);
-//router.post('/register', authControllers.processRegister);
-//router.get('/logout', authControllers.logout);
-
  
 router.get('/login', authControllers.login);
 router.post('/login', [
@@ -16,7 +9,7 @@ router.post('/login', [
   body('contraseña').isLength({ min: 5 }).withMessage('La contraseña debe tener al menos 5 caracteres')
 ], authControllers.login);
 
-
+//me falta para subir la imagen 
   
 router.get('/register', authControllers.register);
 router.post('/register', [

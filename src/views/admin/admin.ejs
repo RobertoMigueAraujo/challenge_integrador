@@ -23,20 +23,17 @@
         <h1 class="tituloAdmin">LISTADO DE PRODUCTOS</h1>
         <div class="agregarAdmin">
             <h2>AGREGAR</h2>
-            <a href="/admin/create">
+            <a href="admin/create">
                 <button>
                     <img src="/img/icons/Vector.svg" alt="boton plus">
                 </button>
             </a>
         </div>
-        
-    
 </div>
 
-        <div class="tabla-productos">
-        <table class="wrapperProduct">
+<div class="tabla-productos">
+    <table class="wrapperProduct">
         <thead>
-            <div class="titulos-productos">
             <tr>
                 <th class="id">ID</th>
                 <th class="codigo">Código</th>
@@ -45,8 +42,42 @@
                 <th></th>
                 <th></th>
             </tr>
-        </div>
         </thead>
+       
+        <tbody>
+            <% productos.forEach(producto => { %>
+                <tr>
+                  <td><%= producto.id %></td>
+                  <td><%= producto.code %></td>
+                  <td><%= producto.name %></td>
+                  <td><%= producto.category %></td>
+                    <td>
+                        <a href="admin/edit/<%= producto.id %>">
+                            <button type="button"><img src="/img/icons/edit_pencil.svg" alt="Editar Producto"></button>
+                          </a>
+                    </td>
+                    <td>
+                        <form action="admin/delete/<%= producto.id %>?_method=DELETE" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+
+                            <button type="submit"><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button>
+                        </form>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+      
+    </table>
+</div>
+</div>
+
+<%- include('../partials/footer.ejs') %>
+            <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+            <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        </body>
+            </html>  
+
+        <!--
         <tbody>
 
             <tr>
@@ -160,11 +191,7 @@
 
 </div>
 </div>
+-->
 
-<!--aca empieza el footer-->
-<%- include('../partials/footer.ejs') %>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</body>
-    </html>
+
     

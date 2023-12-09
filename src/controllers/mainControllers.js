@@ -1,20 +1,19 @@
-
 const mainControllers = {
   index: (req, res) => {
     res.render('main/index', { title: 'Página de inicio' });
   },
   contact: (req, res) => {
-    res.render ('main/contact', { title: 'Página de contacto' });
+    res.send('<h1>Esta es la página de contacto</h1>');
   },
   about: (req, res) => {
-    res.render('main/about', { title: 'Acerca de nosotros' });
+    res.send('<h1>Esta es la página acerca de nosotros</h1>');
   },
   faqs: (req, res) => {
-    res.render('main/faqs', { title: 'Preguntas frecuentes' });
+    res.send('<h1>Esta es la página de preguntas frecuentes</h1>');
   }
 };
 
-
 module.exports = mainControllers;
+
 
 
