@@ -29,7 +29,11 @@
                              <button id="substract" class="item--quantity" type="button">-</button>
                               <input class="item--input" type="text" name="quantity" id="quantity" placeholder="0">
                               <button id="add" class="item--quantity" type="button">+</button>
-                              <button class="item--submit btn btn--primary btn--medium"  type="submit">Agregar al Carrito</button>
+                              <form action="/shop/carrito" method="post">
+                
+                                <button class="item--submit btn btn--primary btn--medium" type="submit">Agregar al Carrito</button>
+                            </form>
+                            
                              </div>
                              <p class="item-promo"><a href="">Ver métodos de pago</a>- 3 CUOTAS SIN INTERÉS</p>    
                 </article>
@@ -105,7 +109,11 @@
        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-       <script src="/src/routes/item.js"></script>
-      <script src="/src/routes/glide.js"></script>
+
+       <script src="/carousel/item.js"></script>
+       <script src="/carousel/glide.js"></script>
+
+
+       
     </body>
     </html>

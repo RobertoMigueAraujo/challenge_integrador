@@ -36,7 +36,7 @@ const adminControllers = {
     res.render('admin/edit', { producto });
   },
   
-  showEditProduct: async (req, res) => {
+ edit: async (req, res) => {
     try {
       const { id } = req.params;
       const producto = await Producto.findByPk(id); 
@@ -47,11 +47,11 @@ const adminControllers = {
     }
   },
 
-  updateProduct: async (req, res) => {
+  update: async (req, res) => {
     try {
       const { id } = req.params;
       await Producto.update(req.body, { where: { id } }); 
-      res.redirect('/admin'); 
+      res.redirect('/admin/admin'); 
     } catch (error) {
       console.error(error);
       res.status(500).send('Error actualizando el producto');
@@ -59,11 +59,11 @@ const adminControllers = {
   },
 
 
-  deleteProduct: async (req, res) => {
+  destroy: async (req, res) => {
     try {
       const { id } = req.params;
       await Producto.destroy({ where: { id } });
-      res.redirect('/admin');
+      res.redirect('/admin/admin');
     } catch (error) {
       console.error(error);
       res.status(500).send(`Error eliminando el producto: ${error.message}`);

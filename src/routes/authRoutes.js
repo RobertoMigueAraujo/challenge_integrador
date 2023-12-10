@@ -7,10 +7,9 @@ router.get('/login', authControllers.login);
 router.post('/login', [
   body('email').isEmail().withMessage('Por favor ingresa un email válido'),
   body('contraseña').isLength({ min: 5 }).withMessage('La contraseña debe tener al menos 5 caracteres')
-], authControllers.login);
+], authControllers.processLogin); 
 
-//me falta para subir la imagen 
-  
+
 router.get('/register', authControllers.register);
 router.post('/register', [
   body('nombre').notEmpty().withMessage('El nombre es requerido'),
@@ -23,11 +22,8 @@ router.post('/register', [
     }
     return true;
   })
-], authControllers.register);
-
-
+], authControllers.processRegister); 
 
 router.get('/logout', authControllers.logout);
 
 module.exports = router;
-

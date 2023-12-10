@@ -119,7 +119,7 @@ header{
 }
 
 img.pictureFooter {
-    margin-left: 40%;
+    margin-left: 70%;
     
   }
   .navbarContainer{
@@ -486,7 +486,7 @@ p.textoRegister {
 .contenidoRegister input.nombre, .contenidoRegister input.apellidoRegister, .contenidoRegister input.emailRegister, .contenidoRegister input.contraseñaRegister, .contenidoRegister input.repeatRegister {
    border: 2px solid transparent;
     border-bottom-color: var(--primary-solid);
-    color: var(--light-bg-solid);
+   
    
 }
 

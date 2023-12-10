@@ -15,42 +15,41 @@
 
      <!--fin header-->
      
-    <div class="container">
+     <div class="container">
         <div class="contenidoRegister">
-        <h1>CREA TU CUENTA</h1>
-        <p class="textoRegister">Completa el formulario para ser parte del mundo de los Funkos</p>
-        <form action="/auth/register" method="post" id="formulario2" enctype="application/x-www-form-urlencoded"></form>
-        <div class="form-field">
-            <label for="nombre">Nombre:</label>
-            <input  type="text" name="nombre"  placeholder="John" class="nombre" class="nombreRegister">
+            <h1>CREA TU CUENTA</h1>
+            <p class="textoRegister">Completa el formulario para ser parte del mundo de los Funkos</p>
+            <form action="/auth/register" method="post" id="formulario2" enctype="application/x-www-form-urlencoded">
+                <div class="form-field">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="John" class="nombre" class="nombreRegister">
+                </div>
+                <div class="form-field">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Doe" class="apellidoRegister">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="johndoe@correo.com" class="emailRegister">
+                </div>
+                <div class="form-field">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" name="contraseña" placeholder="********" class="contraseñaRegister">
+                </div>
+                <div class="form-field">
+                    <label for="repitaContraseña">Repita Contraseña:</label>
+                    <input type="password" name="repitaContraseña" placeholder="********" class="repeatRegister">
+                </div>
+                <div class="form-field">
+                    <div class="checkbox-container">
+                        <button type="submit" class="custom-button">Registrar</button>
+                        <input type="checkbox" name="aceptarTerminos" id="aceptarTerminos" required>
+                        <label for="aceptarTerminos">Acepto<a href="#" class="Terminos">Términos y Condiciones</a></label>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="form-field">
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" placeholder="Doe" class="apellidoRegister">
-        </div>
-        <div class="form-field">
-            <label  for="email">Email:</label >
-            <input type="email" name="email"  placeholder="johndoe@correo.com" class="emailRegister" >
-        </div>
-        <div class="form-field">
-            <label for="contraseña">Contraseña:</label >
-            <input  type="password" name="contraseña"  placeholder="********" class="contraseñaRegister">
-        </div>
-        <div class="form-field">
-            <label for="repitaContraseña">Repita Contraseña:</label >
-            <input type="password" name="repitaContraseña"  placeholder="********" class="repeatRegister">
-        </div>
-        <div class="form-field">
-            <div class="checkbox-container">
-                <button type="submit" class="custom-button"> Registrar </button>
-                <input type="checkbox" name="aceptarTerminos" id="aceptarTerminos" required>
-                <label for="aceptarTerminos">Acepto<a href="#"  class="Terminos">Términos y Condiciones</a></label>
-            </div>
-        </div>
-    </form>
     </div>
-    </div>
-    
     
  <!--aca empieza el footer-->
 
