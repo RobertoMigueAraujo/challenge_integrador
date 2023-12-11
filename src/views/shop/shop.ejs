@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <title>SHOP</title>
+</head>
+
+<body>
+    <%- include('../partials/header.ejs') %>
+        <!--fin header-->
+        <main class="principal-tienda container">
+            <aside class="shop-container">
+
+                <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                    <label for="buscar">BUSCAR</label>
+                    <input type="text" name="buscar" id="buscar" placeholder=" item o categoria">
+
+                    <label for="OrdenarPor">ORDENAR POR</label>
+                    <select name="OrdenarPor" id="OrdenarPor" placeholder="Mayor a menor">
+                        <option value="mayor-menor">Mayor a menor</option>
+                        <option value="menor" >Menor a mayor</option>
+                    </select>
+                    <label for="precio">PRECIO</label>
+                    <div class="contadorShop">
+                        <label for="min">MIN</label>
+                        <input type="text" name="min" id="min" placeholder="0">
+                        <label for="max">MAX</label>
+                        <input type="text" name="max" id="max" placeholder="0">
+                    </div>
+                    <label for="filtrar">FILTRAR</label>
+
+                    <div class="checkboxShop">
+                        <div>
+                            <input type="checkbox" name="opcion[]" id="nuevos" value="NUEVOS">
+                            <label for="nuevos">NUEVOS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="opcion[]" id="ofertas" value="OFERTAS">
+                            <label for="ofertas">OFERTAS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="opcion[]" id="edicion especial" value="EDICION ESPECIAL">
+                            <label for="edicion especial">EDICION ESPECIAL</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="opcion[]" id="favoritos" value="FAVORITOS">
+                            <label for="favoritos">FAVORITOS</label>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+            <!--esta es la parte de shop-->
+            <!--
+<div class="shop-principal"  id="shop-principal">
+<section class="shop-groups">
+
+    <section class="shop-products">
+     
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+        
+                <picture>
+                    <img src="/img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">STAR WARS</p>
+                    <h4 class="shop-h4">STORMTROOPER LIGHTSABER</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">POKEMON</p>
+                    <h4 class="shop-h4">PIDGEOTTO</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+           
+                <picture>
+                    <img src="/img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">HARRY POTTER</p>
+                    <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+    </section>
+
+    <section class="shop-products">
+      
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="/img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">STAR WARS</p>
+                    <h4 class="shop-h4">STORMTROOPER LIGHTSABER</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">POKEMON</p>
+                    <h4 class="shop-h4">PIDGEOTTO</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+            <a href="">
+                <picture>
+                    <img src="/img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">HARRY POTTER</p>
+                    <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+    </section>
+    
+    <section class="shop-products">
+   
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+    
+                <picture>
+                    <img src="/img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">STAR WARS</p>
+                    <h4 class="shop-h4">STORMTROOPER LIGHTSABER</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div> 
+                <a href="">
+          
+                <picture>
+                    <img src="/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">POKEMON</p>
+                    <h4  class="shop-h4">PIDGEOTTO</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+        <article>
+            <div class="product-wrapper">
+                <div class="product-badge">Nuevo</div>  
+            <a href="">
+
+                <picture>
+                    <img src="/img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div>
+                    <p class="shop-parrafo">HARRY POTTER</p>
+                    <h4 class="shop-h4">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="shop-prix">$ 1799,99</p>
+                    <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                </div>
+            </a>
+        </article>
+    </section>
+</section>
+</div> 
+-->
+            <div class="shop-principal" id="shop-principal">
+                <section class="shop-groups">
+                    <section class="shop-products">
+                        <% items.forEach(function(item) { %>
+                            <article>
+                                <div class="product-wrapper">
+                                    <div class="product-badge">Nuevo</div>
+                                    <a href="">
+                                        <picture>
+                                            <img src="<%= item.image %>" alt="<%= item.name %>">
+                                        </picture>
+                                        <div>
+                                            <p class="shop-parrafo">
+                                                <%= item.category %>
+                                            </p>
+                                            <h4 class="shop-h4">
+                                                <%= item.name %>
+                                            </h4>
+                                            <p class="shop-prix">$ <%= item.price %>
+                                            </p>
+                                            <p class="shop-cuotas">3 CUOTAS SIN INTERES</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                            <% }); %>
+                    </section>
+                </section>
+            </div>
+
+            <div class="pagination">
+                <div class="left-arrow arrow">&lt;</div>
+                <div class="number-box">1</div>
+                <div class="number-box">2</div>
+                <div class="dots">...</div>
+                <div class="number-box">9</div>
+                <div class="number-box">10</div>
+                <div class="right-arrow arrow">&gt;</div>
+            </div>
+        </main>
+
+        <!--el footer-->
+        <%- include('../partials/footer.ejs') %>
+
+            <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>>
+
+</html>
