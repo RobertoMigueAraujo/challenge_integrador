@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    
+    <title>CARRITO</title>
+    
+</head>
+<body>
+    <%- include('../partials/header-cart.ejs') %>
+
+     <!--fin header-->
+<main class="container">
+    <div class="contenedorTitulo">
+            <span class="tituloCarrito">CARRITO DE COMPRAS</span></div>
+            <main class="container">
+            <div class="carritoContainer1">
+
+                <div class="encabezados-carrito">
+                    <h2 class="headerCarrito1"> DETALLE DE PRODUCTO </h2>
+                    <h2 class="headerCarrito2">CANTIDAD</h2>
+                    <h2 class="headerCarrito3">TOTAL</h2>
+                   
+                   
+                
+            </div>
+        </div>
+
+        <div class="carritoContainer2">
+                <div class="carritoitem1">
+                    <div class="comprasitem1">
+                        <img src="/img/star-wars/baby-yoda-1.webp" alt="Figura Baby Yoda" class="carritoImg1">  
+                        <h3>BABY YODA BLUEBALL</h3>
+                        <h3>STAR WARS</h3>    
+                        <h3>precio: $ 1799,99</h3>   
+                    </div>
+                    <div class="cantidadCarrito1">
+                        <h3 class="number1">2</h3>
+                        <div class="contadorCarrito1">
+                            <h3 class="plus">+</h3>
+                            <h3 class="minus">-</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="precioCarrito1">
+                        <h3>$ 3599,98</h3>
+                    </div>
+                    <div class="botonEliminar1">
+                        <button><img src="/img/icons/eliminar.svg" alt="boton eliminar" class="iconoCarrito1"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carritoContainer3">
+
+                <div class="carritoitem2">
+                    <div class="comprasitem2">
+                        <img src="/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto" class="carritoImg2">  
+                       
+                            
+                    <h3>PIDGEOTTO</h3>
+                    <h3>POKEMON</h3>    
+                    <h3>Precio unitario: $ 1799,99</h3>   
+                          
+                        </div>
+                <div class="cantidadCarrito2">
+                       <h3 class="number2">1</h3>
+                      
+                       <div class="contadorCarrito2">
+                        <h3 class="plus">+</h3>
+                        <h3 class="minus">-</h3>
+                    </div>
+                    
+                
+            </div>
+                
+                <div class="precioCarrito2">
+                    <h3>$ 1799,99</h3>
+                </div>
+                <div class="botonEliminar2">
+                            <a><button><img src="/public/img/icons/eliminar.svg" alt="boton eliminar" class="iconoCarrito2">
+                            
+                            </button></a>
+                        </div>
+            </div>
+            
+       
+    </div>
+<div class="resumenTotal">
+            <span class="resumen-titulo">RESUMEN</span>
+       
+            
+            <table class="Total">
+                <tr class="resumen-elementos">
+                    <td class="elementos-texto1">CANTIDAD DE ELEMENTOS</td>
+                    <td class="elementos-texto2">3</td>
+                </tr>
+                <tr class="resumen-subtotal">
+                    <td class="subtotal-texto1">SUBTOTAL</td>
+                    <td class="subtotal-texto2">$ 5.399,97</td>
+                </tr>
+                <tr class="resumen-envio">
+                    <td class="envio-texto1">ENVIO</td>
+                    <td class="envio-texto2">$ 0,00</td>
+                </tr>
+                <tr class="resumen-total">
+                    <td class="total-texto1">TOTAL</td>
+                    <td class="total-texto2">$ 5.399,97</td>
+                </tr>
+            </table>
+                <span class="ResumenPago">IR A PAGAR</span>
+            </div>
+            
+    </main>
+</main>
+    <!--aca empieza el footer-->
+    <%- include('../partials/footer.ejs') %>
+
+    
+       <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    </body>
+    </html>

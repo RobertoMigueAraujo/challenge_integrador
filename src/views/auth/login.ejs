@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/index.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <title>LOGIN</title>
+
+
+    
+</head>
+<body>
+    <%- include('../partials/header-tienda.ejs') %>
+
+
+     <main class="container">
+        <div class="loginFormulario">
+        <h1>INGRESAR A MI CUENTA</h1>
+        <div class="login-container">
+        <div class="login--principal">
+            <form action="/auth/login" method="post" id="formulario2" enctype="application/x-www-form-urlencoded">
+
+            <div>
+                <div class="loginEmail">
+            <label class="login--email-texto" for="email">Email:</label>
+            <input class="placeholder-valor1"  type="email" name="email" id="email" required placeholder="johndoe@correo.com"> 
+        
+            </div>
+            <div class="login-contraseña">
+                <label class="login--contraseña-texto" for="contraseña">Contraseña:</label>
+                <input class="placeholder-valor2"  type="password" name="contraseña" id="Contraseña" placeholder="********************">
+            </div>
+            </div>
+        </div>
+
+            <div class="login-bottom">
+               
+             <button class="login-ingresar" type="submit">Ingresar</button>
+            
+            <div class="login-box">
+              <input  type="checkbox">
+             <p class="loginText"> Recordarme </p> 
+            </div>
+        </div>
+          <div class="enlaceLogin">
+             <p>Olvidé mi contraseña</p>
+            </div>
+            
+        </form>
+    
+</div>
+</div>
+     </main>
+
+   <!--aca empieza el footer-->
+   <%- include('../partials/footer.ejs') %>
+
+   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<script src="Css/js/login.js"></script>
+</body>
+</html>
