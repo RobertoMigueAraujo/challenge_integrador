@@ -127,13 +127,13 @@ img{
         
     }
 /*header*/
-/* Estilos para el header */
+
 header {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
 }
 
-/* Estilos para la barra de navegación */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -167,14 +167,13 @@ header {
     background-color: var(--primary-900);
 }
 
-/* Estilos para elementos con iconos */
+
 .with-icon {
     display: flex;
     align-items: center;
     gap: var(--spacing-8);
 }
 
-/* Estilos para submenús */
 .width-submenu:hover .submenu {
     display: block;
 }
@@ -1033,17 +1032,7 @@ input#nombre {
     border: none; 
     border-bottom: 2px solid var(--primary-solid); 
 }
-/*
-.formulario-create {
-  flex-direction:column;
-  display: flex;
-}*//*
-.categoriaCreate{
- 
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}*/
+
 select#categoria {
     margin-right: 20px;
 
@@ -1052,12 +1041,8 @@ select#categoria {
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
-}/*
-.descripcion {
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}*/
+}
+
 .textProducto {
     display: flex;
     margin-bottom: 20px;
