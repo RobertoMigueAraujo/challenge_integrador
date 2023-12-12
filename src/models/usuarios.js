@@ -1,4 +1,4 @@
-// usuarios.js
+
 
 const { DataTypes } = require('sequelize');
 const sequelize = require('./connection'); 
@@ -25,7 +25,7 @@ const Usuarios = sequelize.define('usuarios', {
     allowNull: false,
   },
   repitaContraseña: {
-    type: DataTypes.VIRTUAL, // Este campo no se almacenará en la base de datos
+    type: DataTypes.VIRTUAL, 
     allowNull: false,
     validate: {
       isSameAsContraseña(value) {
