@@ -13,12 +13,10 @@ const shopRoutes = require('./src/routes/shopRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
 const authRoutes = require('./src/routes/authRoutes');
 
+app.use(express.static(path.join(__dirname, '/public')));
+
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'src', 'views'));
-
-app.use(express.static('public'));
-app.use('/img', express.static(path.join(__dirname, 'public', 'img')));
-
+app.set('views', path.join(__dirname, '/src/views'));
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(express.json());
 app.use(methodOverride('_method'));

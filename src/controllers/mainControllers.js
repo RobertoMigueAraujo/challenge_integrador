@@ -1,6 +1,6 @@
 const mainControllers = {
-  index: (req, res) => {
-    res.render('main/index', { title: 'Página de inicio' });
+  inicio: (req, res) => {
+    res.render('main/inicio', { title: 'Página de inicio' });
   },
   contact: (req, res) => {
     res.send('<h1>Esta es la página de contacto</h1>');
