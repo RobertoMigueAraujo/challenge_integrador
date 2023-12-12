@@ -579,7 +579,7 @@ select#OrdenarPor {
 
 @media screen and (min-width: 361px) and (max-width: 470px) {
     .shop-products {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas de 470px */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px; 
     }
 }
