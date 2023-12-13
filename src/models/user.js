@@ -37,7 +37,7 @@ const User = sequelize.define('user', {
 
 async function insertarUsuario() {
   try {
-    const email = 'grup11@x.com';
+    const email = 'Grp11@x.com';
     const contraseña = 'Qwerty21';
 
    
