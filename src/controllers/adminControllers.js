@@ -63,12 +63,15 @@ const adminControllers = {
     try {
       const { id } = req.params;
       await Producto.destroy({ where: { id } });
-      res.redirect('/admin/admin');
+      console.log('Producto eliminado exitosamente'); 
+      res.send('Producto eliminado exitosamente'); 
     } catch (error) {
       console.error(error);
       res.status(500).send(`Error eliminando el producto: ${error.message}`);
     }
   }
+  
+  
   
 
 };

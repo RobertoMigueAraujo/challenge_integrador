@@ -3,6 +3,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
+const session = require('express-session');
+
+app.use(session({
+  secret: 'S3cr3t01',
+  resave: false,
+  saveUninitialized: true
+}));
 const bodyParser = require('body-parser'); 
 const multer = require('multer'); 
 
@@ -26,6 +33,8 @@ app.use('/', mainRoutes);
 app.use('/', shopRoutes);
 app.use('/admin', adminRoutes);
 app.use('/auth', authRoutes);
+
+
 
 const PORT = process.env.PORT || 3000;
 

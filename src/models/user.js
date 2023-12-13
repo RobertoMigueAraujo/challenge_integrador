@@ -18,24 +18,44 @@ const User = sequelize.define('user', {
     field: 'contraseña',
   }
 }, {
-  tableName: 'USERS',
+  tableName: 'USERS', 
   hooks: {
     beforeCreate: async (user) => {
-      const hashedPassword = await bcrypt.hash(user.contraseña, 10);
+      const salt = await bcrypt.genSaltSync(10);
+      const hashedPassword = await bcrypt.hash(user.contraseña, salt);
       user.contraseña = hashedPassword;
     },
     beforeUpdate: async (user) => {
       if (user.changed('contraseña')) {
-        const hashedPassword = await bcrypt.hash(user.contraseña, 10);
+        const salt = await bcrypt.genSaltSync(10);
+        const hashedPassword = await bcrypt.hash(user.contraseña, salt);
         user.contraseña = hashedPassword;
       }
     }
   }
 });
 
+async function insertarUsuario() {
+  try {
+    const email = 'grup11@x.com';
+    const contraseña = 'Qwerty21';
+
+   
+    const usuarioCreado = await User.create({
+      email: email,
+      contraseña: contraseña 
+    });
+
+    console.log('Usuario agregado exitosamente:', usuarioCreado.toJSON());
+  } catch (error) {
+    console.error('Error al insertar usuario:', error);
+  }
+}
+
 User.sync()
   .then(() => {
     console.log('Modelo User sincronizado con la base de datos');
+    insertarUsuario(); 
   })
   .catch(error => {
     console.log('Error al sincronizar el modelo User');

@@ -1,9 +1,6 @@
-
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const session = require('express-session');
 const User = require('../models/user');
-
 
 const authControllers = {
   login: (req, res) => {
@@ -26,8 +23,8 @@ const authControllers = {
 
           if (match) {
             const token = jwt.sign({ _id: user.id }, 'clave-secreta');
-            req.session.token = token;
-            return res.redirect('/');
+            req.session.token = token; 
+            return res.redirect('/'); 
           } else {
             return res.send('Contraseña incorrecta');
           }
@@ -53,21 +50,20 @@ const authControllers = {
         return res.status(400).send('Las contraseñas no coinciden');
       }
   
+      const hashedPassword = await bcrypt.hash(contraseña, 10);
+
       const userExists = await User.findOne({ where: { email: email } });
       if (userExists) {
         return res.status(400).send('El email ya está registrado');
       }
   
-      const hash = await bcrypt.hash(contraseña, 10);
-  
       await User.create({
-        email: email,
-        contraseña: hash,
-        nombre: nombre,
-        apellido: apellido
+        email,
+        contraseña: hashedPassword, 
+        nombre,
+        apellido
       });
   
-      
       res.send('Registro exitoso. Ahora puedes iniciar sesión');
     } catch (error) {
       console.error('Error al procesar el registro:', error);
@@ -76,9 +72,9 @@ const authControllers = {
   },
   
   logout: (req, res) => {
+    req.session.destroy(); 
     res.send('<h1>Cierre de sesión exitoso</h1>');
   }
-  
 };
 
 module.exports = authControllers;

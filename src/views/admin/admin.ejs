@@ -57,11 +57,16 @@
                           </a>
                     </td>
                     <td>
-                        <form action="/admin/delete/<%= producto.id %>?_method=DELETE" method="POST">
+                        <form action="/admin/productos/<%= producto.id %>?_method=DELETE" method="POST">
                             <input type="hidden" name="_method" value="DELETE">
 
                             <button type="submit"><img src="/img/icons/delete_trash.svg" alt="Eliminar Producto"></button>
                         </form>
+                        <form action="/admin/productos/<%= producto.id %>" method="POST">
+                            <input type="hidden" name="_method" value="PUT">
+                
+                           
+                          </form>
                     </td>
                 </tr>
                 <% }); %>
