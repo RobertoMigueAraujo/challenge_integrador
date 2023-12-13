@@ -58,13 +58,13 @@ const authControllers = {
         return res.status(400).send('El email ya está registrado');
       }
   
-      const hash = await bcrypt.hash(contraseña, 10);
+      
   
       await User.create({
-        email: email,
-        contraseña: hash,
-        nombre: nombre,
-        apellido: apellido
+        email,
+        contraseña,
+        nombre,
+        apellido
       });
   
       
