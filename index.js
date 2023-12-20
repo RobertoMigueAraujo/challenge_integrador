@@ -36,7 +36,7 @@ app.use('/auth', authRoutes);
 
 
 
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3006;
 
 (async () => {
   try {

@@ -14,7 +14,7 @@
     <main class="container">
     <div class="formulario-create">
    <h1>CREAR NUEVO ITEM</h1>
-   <form action="" id="miFormulario1" method="POST" enctype="application/x-www-form-urlencoded">
+   <form action="/admin/admin" id="miFormulario1" method="POST" enctype="application/x-www-form-urlencoded">
     <div class="categoriaCreate">
     <label for="categoria">Categoria:</label>
     <select name="seleccionar" id="categoria" >
@@ -30,11 +30,11 @@
     </select>
 </div>
 <div class="productoCreate">
-    <label for="NombreDelProducto">Nombre del producto:</label>
-    <input type="NombreDelProducto" name="NombreDelProducto" id="NombreDelProducto" placeholder="Kakashi Hataki Shipudden Saga"><br>
-</div>
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Kakashi Hatake Shippuden Saga" value="<%= producto.name %>">
+    </div><br>
 <div class="descripcion">
-    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="50" rows="10"  placeholder="Descripcion del producto"></textarea><br>
+    <textarea name="DescripcionDelProducto" id="DescripcionDelProducto" cols="50" rows="10"  placeholder="Descripcion del producto"><%= producto.category %></textarea><br>
 </div>
 <div class="textProducto">
     <label for="sku">SKU:</label>

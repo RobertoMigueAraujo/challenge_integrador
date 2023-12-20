@@ -16,7 +16,7 @@
 
     <main class="container">
         <h1 class="edit-titulo">EDITAR ITEM</h1>
-    <form id="figura-form">
+        <form id="figura-form" action="/admin/<%= producto.id %>/edit" method="POST">
         <div class="categoriaLicencia">
 
             <label for="categoria">Categoría:</label>
@@ -35,14 +35,22 @@
             
         </select>
     </div>
+    <!--
         <div class="edit-productos"> 
         <label for="nombre">Nombre del producto:</label>
      <input type="text" id="nombre" name="nombre" required placeholder="Kakashi Hatake Shippuden Saga">
      
     </div>
+-->
+<div class="edit-productos"> 
+    <label for="nombre">Nombre del producto:</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Kakashi Hatake Shippuden Saga" value="<%= producto.name %>">
+</div>
+<!--
+        <textarea  id="descripcion" name="descripcion" rows="5" cols="50" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori." ></textarea>-->
+        <textarea id="descripcion" name="descripcion" rows="5" cols="50" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori."><%= producto.category %></textarea>
 
-        <textarea  id="descripcion" name="descripcion" rows="5" cols="50" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori." ></textarea>
-    <div class="descuentosEdit">
+        <div class="descuentosEdit">
         <div class="sku">
         <label for="sku">SKU:</label>
         <input type="text" id="sku" name="sku" required placeholder="NAR001012">
@@ -88,8 +96,6 @@
         <input type="submit" value="Modificar Producto" class="modificarProducto">
     </div>
     </form>
-    
-      
     </main>
   
 

@@ -7,7 +7,6 @@ router.get('/admin', adminControllers.getAllProducts);
 router.get('/admin/create', adminControllers.showCreateProduct);
 router.post('/admin/create', adminControllers.createProduct);
 router.get('/admin/edit/:id', adminControllers.showEdit);
-router.get('/:id/edit', adminControllers.edit);
 router.put('/productos/:id' , adminControllers.update)
 router.delete('/productos/:id', adminControllers.destroy);
 module.exports = router;
