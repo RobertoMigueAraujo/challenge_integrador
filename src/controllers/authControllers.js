@@ -24,7 +24,7 @@ const authControllers = {
           if (match) {
             const token = jwt.sign({ _id: user.id }, 'clave-secreta');
             req.session.token = token; 
-            return res.redirect('/'); 
+            return res.redirect('/admin/admin'); 
           } else {
             return res.send('Contraseña incorrecta');
           }

@@ -28,8 +28,8 @@ const ProductosAdmin = sequelize.define('ProductosAdmin', {
     allowNull: false
   }
 },
- {
-  timestamps: false, //
+{
+  timestamps: false,
   freezeTableName: true
 });
 

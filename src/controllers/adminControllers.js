@@ -16,7 +16,6 @@ const adminControllers = {
     }
   },
   
-
   showCreateProduct: (req, res) => {
     res.render('admin/create'); 
   },
@@ -30,13 +29,14 @@ const adminControllers = {
       res.status(500).send('Error creando el producto');
     }
   },
+  
   showEdit: async (req, res) => {
     const { id } = req.params;
     const producto = await Producto.findByPk(id);
     res.render('admin/edit', { producto });
   },
   
- edit: async (req, res) => {
+  edit: async (req, res) => {
     try {
       const { id } = req.params;
       const producto = await Producto.findByPk(id); 
@@ -58,7 +58,6 @@ const adminControllers = {
     }
   },
 
-
   destroy: async (req, res) => {
     try {
       const { id } = req.params;
@@ -70,10 +69,6 @@ const adminControllers = {
       res.status(500).send(`Error eliminando el producto: ${error.message}`);
     }
   }
-  
-  
-  
-
 };
 
 module.exports = adminControllers;
